@@ -6,12 +6,8 @@
     "gsap": "^2.0.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-<<<<<<< HEAD
-    "react-scripts": "^2.1.3"
-=======
     "react-scripts": "2.1.1",
     "react-video-cover": "^1.2.2"
->>>>>>> c0f67d15b0680730398b2b4be3d9a13fb4b0d687
   },
   "scripts": {
     "start": "react-scripts start",
