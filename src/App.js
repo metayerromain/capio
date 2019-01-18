@@ -1,12 +1,22 @@
 import React, { Component } from 'react';
-import Home from './views/Home/Home'
+import ReactDOM from 'react-dom';
+import {TweenLite} from "gsap/TweenMax";
+import Home from './views/Home/HomeContainer'
+
 import './App.css';
 
 class App extends Component {
+
+  componentDidMount(){
+    var anim = ReactDOM.findDOMNode(this).querySelector('.anim');
+    this.myTween = TweenLite.fromTo(anim, 1, { y: 100}, {y:0});
+  }
+
   render() {
     return (
       <div>
         <Home></Home>
+        {/* <Problem/> */}
       </div>
     );
   }
