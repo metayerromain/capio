@@ -1,0 +1,3 @@
+[17-Jan-2019 10:16:02 UTC] PHP Warning:  Use of undefined constant e_all - assumed 'e_all' (this will throw an Error in a future version of PHP) in /Applications/MAMP/htdocs/capio_api_back/api/images/read.php on line 9
+[17-Jan-2019 10:18:06 UTC] PHP Warning:  Use of undefined constant e_all - assumed 'e_all' (this will throw an Error in a future version of PHP) in /Applications/MAMP/htdocs/capio_api_back/api/config/database.php on line 9
+[17-Jan-2019 10:18:46 UTC] PHP Warning:  Use of undefined constant e_all - assumed 'e_all' (this will throw an Error in a future version of PHP) in /Applications/MAMP/htdocs/capio_api_back/api/objects/images.php on line 9
