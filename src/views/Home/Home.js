@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Home = () => (
+const Home = ({text}) => (
   <section>
-    <h1>HomePage works !</h1>
+    <h1 className="anim">{text}</h1>
     </section>
 )
 

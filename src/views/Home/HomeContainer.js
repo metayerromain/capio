@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
+import Home from './Home';
 
 
 class HomeContainer extends Component {
+
+  state = {
+    text : "HomePage works !"
+  }
+
   render() {
     return (
-      console.log("yay")
-    )
+      <Home
+        text = {this.state.text}
+      />
+    );
   }
+
 }
 
 export default HomeContainer;
