@@ -17,7 +17,7 @@ public function __construct($db){
 // used by select drop-down list
 public function readAll(){
     //select all data
-    $query = "SELECT * FROM `images`";
+    $query = "SELECT * FROM `content`";
 
     $stmt = $this->conn->prepare( $query );
     $stmt->execute();
@@ -28,7 +28,7 @@ public function readAll(){
 public function read(){
  
     //select all data
-    $query = "SELECT * FROM `images`";
+    $query = "SELECT * FROM `content`";
  
     $stmt = $this->conn->prepare( $query );
     $stmt->execute();
@@ -40,7 +40,7 @@ function create(){
  
     // query to insert record
     $query = "INSERT INTO
-                `images`
+                `content`
             SET
                 id=:id, title=:title, description=:description";
  
@@ -68,7 +68,7 @@ function create(){
 function readOne(){
  
     // query to read single record
-    $query = "SELECT * FROM `images`
+    $query = "SELECT * FROM `content`
             WHERE
                 id = ?
             LIMIT
@@ -96,7 +96,7 @@ function update(){
  
     // update query
     $query = "UPDATE
-               `images`
+               `content`
             SET
                 id = :id,
                 title = :title,
@@ -128,7 +128,7 @@ function update(){
 function delete(){
  
     // delete query
-    $query = "DELETE FROM `images` WHERE id = ?";
+    $query = "DELETE FROM `content` WHERE id = ?";
  
     // prepare query
     $stmt = $this->conn->prepare($query);
@@ -152,7 +152,7 @@ function search($keywords){
  
     // select all query
     $query = "SELECT
-                `images`
+                `content`
                 
             WHERE
                 id LIKE ? OR description LIKE ? OR id LIKE ?";
