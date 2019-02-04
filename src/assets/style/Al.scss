@@ -1,0 +1,766 @@
+/** NAV **/
+.inner {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.nav-panel {
+    position: fixed;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    transition: opacity 0.5s, transform 0.5s cubic-bezier(0.57, 1.2, 0.68, 2.6);
+    will-change: transform, opacity;
+  
+    &.invisible {
+      opacity: 0;
+      transform: translateY(-50%) scale(0.5);
+    }
+  
+    ul {
+      list-style-type: none;
+  
+      .nav-btn {
+        position: relative;
+        overflow: hidden;
+        width: 1rem;
+        height: 1rem;
+        margin-bottom: 0.5rem;
+        border: 0.12rem solid #fff;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: border-color, transform 0.3s;
+        will-change: border-color, transform;
+  
+        &:after {
+          @extend .inner;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          transform: translateX(-50%) translateY(-50%) scale(0.3);
+          background-color: #fff;
+          opacity: 0;
+          transition: transform, opacity 0.3s;
+          will-change: transform, opacity;
+        }
+  
+        &.active:after, &:hover:after {
+          transform: translateX(-50%) translateY(-50%) scale(0.7);
+          opacity: 1;
+        }
+        &:hover {
+          border-color: yellow;
+          transform: scale(1.2);
+        }
+        &:hover:after {
+          background-color: yellow;
+        }
+      }
+    }
+  
+    .scroll-btn {
+      position: absolute;
+      left: 0;
+      width: 1rem;
+      height: 1rem;
+      border: 0.2rem solid #fff;
+      border-left: none;
+      border-bottom: none;
+      cursor: pointer;
+      transform-origin: 50% 50%;
+      transition: border-color 0.3s;
+  
+      &.up {
+        top: -1.6rem;
+        transform: rotate(-45deg);
+      }
+      &.down {
+        bottom: -1.2rem;
+        transform: rotate(135deg);
+      }
+  
+      &:hover {
+        border-color: yellow;
+      }
+    }
+  
+  }
+/** NAV **/
+
+/** LES ALS +*/
+#Al1 {
+    display: block;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url('../img/1\ AL/fond1.jpg') no-repeat center;
+    background-blend-mode: saturation;
+    background-size: cover;
+    position: relative;
+    .blockText {
+        width: 829px;
+        height: 186px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 10%;
+        p {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: SourceSansPro;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+    .img1 {
+        background: url('../img/1\ AL/castor1.jpg') no-repeat center;
+        background-size: cover;
+        width: 326px;
+        height: 415px;
+        position: absolute;
+        left: 0;
+        bottom: 10%;
+    }
+    .img2 {
+        background: url('../img/1\ AL/corbeau1.jpg') no-repeat center;
+        background-size: cover;
+        width: 600px;
+        height: 415px;
+        position: absolute;
+        bottom: 10%;
+        left: 27%;
+    }
+    .img3 {
+        background: url('../img/1\ AL/ours1.jpg') no-repeat center;
+        background-size: cover;
+        width: 394px;
+        height: 415px;
+        position: absolute;
+        bottom: 10%;
+        right: 0;
+    }
+}
+#Al2 {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url('../img/2\ AL/fond2.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    .blockText {
+        width: 464px;
+        height: 315px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+        p {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: SourceSansPro;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+    .blockText2 {
+        width: 484px;
+        height: 382px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        right: 30px;
+        bottom: 40px;
+        p {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: SourceSansPro;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+    .img1 {
+        background: url('../img/2\ AL/cascade1.jpg') no-repeat center;
+        background-size: cover;
+        width: 570px;
+        height: 810px;
+        position: absolute;
+        left: 20%;
+        bottom: 10px;
+        z-index: 100;
+    }
+    .img2 {
+        background: url('../img/2\ AL/paysage1.jpg') no-repeat center;
+        background-size: cover;
+        width: 728px;
+        height: 428px;
+        position: absolute;
+        top: 0;
+        right: 30px;
+    }
+}
+#Al3 {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background-color: #222;
+    position: relative;
+    .blockText {
+        width: 829px;
+        height: 186px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        p {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: SourceSansPro;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+    .img1 {
+        background: url('../img/3\ AL/wapiti1.jpg') no-repeat center;
+        background-size: cover;
+        width: 50%;
+        height: 100vh;
+        float: right;
+    }
+}
+#Al4 {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url('../img/4\ AL/fond3.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    .blockText {
+        width: 582px;
+        height: 490px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        right: 10%;
+        bottom: 40px;
+        z-index: 1000;
+        p {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: SourceSansPro;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+    .img1 {
+        background: url('../img/4\ AL/loup2.png') no-repeat center;
+        background-size: cover;
+        width: 554px;
+        height: 390px;
+        position: absolute;
+        left: 10%;
+        top: 30px;
+    }
+    .img2 {
+        background: url('../img/4\ AL/paysage2.jpg') no-repeat center;
+        background-size: cover;
+        width: 668px;
+        height: 280px;
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+    }
+}
+#Al5 {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url('../img/5\ AL/fond4.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    .blockText {
+        width: 581px;
+        height: 407px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        left: 3%;
+        bottom: 3%;
+        z-index: 1000;
+        p {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: SourceSansPro;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+    .img1 {
+        background: url('../img/5\ AL/barrage1.png') no-repeat center;
+        background-size: cover;
+        width: 960px;
+        height: 540px;
+        position: absolute;
+        right: 3%;
+        top: 3%;
+    }
+}
+#Al6 {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url('../img/6\ AL/fond5.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    .blockText {
+        width: 618px;
+        height: 502px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        p {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: SourceSansPro;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+    .img1 {
+        background: url('../img/6\ AL/paysage3.jpg') no-repeat center;
+        background-size: cover;
+        width: 458px;
+        height: 611px;
+        position: absolute;
+        left: 5%;
+        top: 5%;
+    }
+}
+#Al7 {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url('../img/7\ AL/fond5.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    .blockText {
+        width: 682px;
+        height: 259px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        z-index: 1000;
+        p {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: SourceSansPro;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+    .img1 {
+        background: url('../img/7\ AL/castor1.jpg') no-repeat center;
+        background-size: cover;
+        width: 449px;
+        height: 596px;
+        position: absolute;
+        right: 15%;
+        top: 30px;
+    }
+}
+#Al8 {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url('../img/8\ AL/fond6.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    .blockText {
+        width: 612px;
+        height: 480px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        p {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: SourceSansPro;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+    .img1 {
+        background: url('../img/8\ AL/loutre1.jpg') no-repeat center;
+        background-size: cover;
+        width: 436px;
+        height: 256.8px;
+        position: absolute;
+        left: 5%;
+        top: 5%;
+    }
+    .img2 {
+        background: url('../img/8\ AL/grenouille1.jpg') no-repeat center;
+        background-size: cover;
+        width: 436px;
+        height: 202px;
+        position: absolute;
+        top: 50%;
+        right: 5%;
+    }
+    .img3 {
+        background: url('../img/8\ AL/canard1.jpg') no-repeat center;
+        background-size: cover;
+        width: 426px;
+        height: 282px;
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+    }
+}
+#Al9 {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url('../img/9\ AL/fond7.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    .blockText {
+        width: 565px;
+        height: 238px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        right: 10%;
+        bottom: 5%;
+        z-index: 1000;
+        p {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: SourceSansPro;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+    .img1 {
+        background: url('../img/9\ AL/paysage4.jpeg') no-repeat center;
+        background-size: cover;
+        width: 790px;
+        height: 443px;
+        position: absolute;
+        left: 10%;
+        bottom: 25%;
+    }
+}
+#Al10 {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url('../img/10\ AL/fond7.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    .blockText {
+        width: 829px;
+        height: 186px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        p {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: SourceSansPro;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+    .img1 {
+        background: url('../img/10\ AL/aigle1.jpg') no-repeat center;
+    background-size: cover;
+        width: 326px;
+        height: 415px;
+        position: absolute;
+        left: 0;
+        bottom: 10%;
+    }
+    .img2 {
+        background: url('../img/10\ AL/lynx1.jpg') no-repeat center;
+    background-size: cover;
+        width: 600px;
+        height: 415px;
+        position: absolute;
+        bottom: 10%;
+        left: 27%;
+    }
+    .img3 {
+        background: url('../img/10\ AL/scarabe1.jpg') no-repeat center;
+        background-size: cover;
+        width: 394px;
+        height: 415px;
+        position: absolute;
+        bottom: 10%;
+        right: 0;
+    }
+}
+#Al11 {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url('../img/11\ AL/fond7.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    .blockText {
+        width: 597px;
+        height: 442px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        z-index: 1000;
+        p {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: SourceSansPro;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+    .img1 {
+        background: url('../img/11\ AL/loup3.jpg') no-repeat center;
+        background-size: cover;
+        width: 742px;
+        height: 478px;
+        position: absolute;
+        right: 10%;
+        bottom: 20%;
+    }
+}
+#Al12 {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background-color: #222;
+    position: relative;
+    .blockText {
+        width: 597px;
+        height: 352px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        p {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: SourceSansPro;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+    .img1 {
+        background: url('../img/12\ AL/Ours2.jpg') no-repeat center;
+        background-size: cover;
+        width: 50%;
+        height: 100vh;
+    }
+}
+#Al13 {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url('../img/13\ AL/fond7.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    .blockText {
+        width: 607px;
+        height: 393px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+        z-index: 1000;
+        p {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: SourceSansPro;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+    .img1 {
+        background: url('../img/13\ AL/paysage5.jpg') no-repeat center;
+        background-size: cover;
+        width: 682px;
+        height: 700px;
+        position: absolute;
+        margin: auto auto auto 10%;
+        right: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+    }
+}
+#Al14 {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url('../img/14\ AL/fond8.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    .blockText {
+        width: 986px;
+        height: 298px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 5%;
+        z-index: 1000;
+        p {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: SourceSansPro;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+    .blockText2 {
+        width: 606px;
+        height: 363px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+        z-index: 1000;
+        p {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: SourceSansPro;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+    .img1 {
+        background: url('../img/14\ AL/affiche1.jpg') no-repeat center;
+        background-size: cover;
+        width: 400px;
+        height: 600px;
+        position: absolute;
+        left: 10%;
+        bottom: 10%;
+    }
+    .img2 {
+        background: url('../img/14\ AL/affiche2.jpg') no-repeat center;
+        background-size: cover;
+        width: 386px;
+        height: 345px;
+        position: absolute;
+        bottom: 0;
+        right: 12%;
+    }
+}
+/** LES ALS +*/
