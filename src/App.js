@@ -3,7 +3,6 @@ import './assets/style/Reset.scss'
 import ReactDOM from 'react-dom';
 import {TweenLite} from "gsap/TweenMax";
 import Home from './views/Home/HomeContainer';
-import Load from './views/Loader/LoaderContainer';
 import Choice from './views/Choice/ChoiceContainer';
 // import Test from './views/Test';
 
@@ -20,7 +19,6 @@ class App extends Component {
     return (
       <div>
         {/* <Test /> */}
-        <Load />
         <Home /> 
         <Choice />
         {/* <Problem/> */}
