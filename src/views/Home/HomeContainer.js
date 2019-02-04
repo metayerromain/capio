@@ -1,25 +1,30 @@
 import React, { Component } from 'react';
 import Home from './Home';
-import ReactDOM from 'react-dom';
+import video from '../../../src/assets/video/final_wolves.mp4';
 
 class HomeContainer extends Component {
 
   state={
     videoOptions : { 
-      src: '../../src/assets/video/final_wolves.mp4',
+      src: video,
       title: 'click to play/pause',
     },
     paused : false
   }
 
+  skipVideo = (e) => {
+    console.log('skip')
+  }
+
   clickVideo = (e) => {
-    if(!this.state.paused){
-      e.target.pause();
+    console.log(this.state.paused)
+    if(this.state.paused === false){
+      e.target.play();
       this.setState({
         paused : true
       })
     } else{
-      e.target.play();
+      e.target.pause();
       this.setState({
         paused : false
       })
@@ -32,6 +37,7 @@ class HomeContainer extends Component {
       <Home 
         videoOptions = {this.state.videoOptions}
         clickVideo = {this.clickVideo}
+        skipVideo = {this.skipVideo}
       />
     );
   }
