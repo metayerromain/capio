@@ -27,7 +27,7 @@ if($num>0){
  
     // images array
     $images=array();
-    $images_arr["records"]=array();
+    $images_arr["images"]=array();
  
     // retrieve our table contents
     // fetch() is faster than fetchAll()
@@ -43,7 +43,7 @@ if($num>0){
             "img" => $img
         );
  
-        array_push($images_arr["records"], $images_item);
+        array_push($images_arr["images"], $images_item);
     }
  
     // set response code - 200 OK
