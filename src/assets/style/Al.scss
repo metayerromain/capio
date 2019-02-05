@@ -1,4 +1,7 @@
 /** NAV **/
+.anim{
+    opacity: 0;
+}
 .inner {
   content: "";
   position: absolute;
@@ -91,13 +94,13 @@
 
 /** LES ALS +*/
 #Al1 {
+    background-position: center;
+    position: relative;
     display: block;
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
     url('../img/1\ AL/fond1.jpg') no-repeat center;
-    background-blend-mode: saturation;
     background-size: cover;
-    position: relative;
     .blockText {
         width: 829px;
         height: 186px;
