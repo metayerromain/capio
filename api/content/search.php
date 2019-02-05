@@ -27,7 +27,7 @@ if($num>0){
  
     // content array
     $content_arr=array();
-    $content_arr["records"]=array();
+    $content_arr["contents"]=array();
  
     // retrieve our table contents
     // fetch() is faster than fetchAll()
@@ -44,7 +44,7 @@ if($num>0){
             "description" => html_entity_decode($description)
         );
  
-        array_push($content_arr["records"], $content_item);
+        array_push($content_arr["contents"], $content_item);
     }
  
     // set response code - 200 OK
