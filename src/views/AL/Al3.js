@@ -13,10 +13,10 @@ class Al3 extends Component {
     render () {
         return (
             <div id="Al3" class="section">
-                <div className="blockText">
+                <div className="blockText animText">
                     <p>Nous savons tous que les loups tuent différentes espèces d’animaux mais nous sommes moins au courant qu’ils ont donné la vie à beaucoup d’autres ! </p>
                 </div>
-                <div className="img1"></div>
+                <div className="img1 anim"></div>
             </div>
         )
     }
