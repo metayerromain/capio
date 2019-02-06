@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import SplitText from '../../assets/lib/SplitText'
-import { TweenLite, TimelineMax, Power3, Linear, Back, Sine } from 'gsap';
-// import Parallax from 'react-springy-parallax';
-import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
+import { TweenLite, TimelineMax, Power3 } from 'gsap';
 import ReactFullpage from "@fullpage/react-fullpage";
 import Al1 from '../AL/Al1';
 import Al2 from '../AL/Al2';
@@ -28,11 +25,11 @@ class ChoiceAL extends Component {
     }
 
     render(){
+        // console.log('t', props)
         const FullpageWrapper = fullpageProps => (
         <ReactFullpage
             {...fullpageProps}
             callbacks= {["afterLoad", "onLeave"]}
-            scrollOverflow= {true}
             parallax={true}
                 render={({ state, props }) => {
                     
@@ -40,11 +37,9 @@ class ChoiceAL extends Component {
                         var elementToAnim = document.querySelectorAll('.active .anim');
                         var textToAnim = document.querySelectorAll('.active .animText');
 
-                        var title = new SplitText(textToAnim, {type:"words,chars"});
-
                         var timeline = new TimelineMax({paused: true});
+                        timeline.staggerFromTo(textToAnim, .5, {autoAlpha: 0, y: 40 },{autoAlpha:1, y: 0 }, 0.30);
                         timeline.staggerFromTo(elementToAnim, .5, { autoAlpha: 0, y: 40}, {autoAlpha: 1, y: 0, ease: Power3.easeInOut}, .15, "start");
-                        timeline.staggerFromTo(title.chars, .5, {autoAlpha: 0, y: 20 },{autoAlpha: 1, y: 0 }, 0.01 );
 
                         timeline.play();
 
@@ -74,7 +69,6 @@ class ChoiceAL extends Component {
                 }}
             />
         );
-
 
         return (
             <div>
