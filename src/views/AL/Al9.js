@@ -12,7 +12,7 @@ class Al9 extends Component {
 
     render () {
         return (
-            <div id="Al9">
+            <div id="Al9" className="section">
                 <div className="blockText">
                     <p>Nous savons tous que les loups tuent différentes espèces d’animaux mais nous sommes moins au courant qu’ils ont donné la vie à beaucoup d’autres ! </p>
                 </div>

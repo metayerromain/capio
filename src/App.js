@@ -1,28 +1,23 @@
-import React, { Component } from 'react';
-import './assets/style/Reset.scss'
-import ReactDOM from 'react-dom';
-import {TweenLite} from "gsap/TweenMax";
-import Home from './views/Home/HomeContainer';
-import Choice from './views/Choice/ChoiceContainer';
-// import Test from './views/Test';
-
-import './App.css';
+import React, { Component, Fragment  } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import './assets/style/Reset.scss';
+import HomePage from './views/homePage';
+import AlPage from './views/alPage';
+import SlPage from './views/slPage';
+import IndexPage from './views/indexPage';
 
 class App extends Component {
 
-  componentDidMount(){
-    // var anim = ReactDOM.findDOMNode(this).querySelector('.anim');
-    // this.myTween = TweenLite.fromTo(anim, 1, { y: 100}, {y:0});
-  }
-
   render() {
     return (
-      <div>
-        {/* <Test /> */}
-        <Home /> 
-        <Choice />
-        {/* <Problem/> */}
-      </div>
+      <Router>
+          <Fragment>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/choiceAl" component={AlPage} />
+            <Route path="/choiceSl" component={SlPage} />
+            <Route path="/index" component={IndexPage} />
+          </Fragment>
+        </Router>
     );
   }
 }

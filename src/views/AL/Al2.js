@@ -12,7 +12,7 @@ class Al2 extends Component {
 
     render () {
         return (
-            <div id="Al2">
+            <div id="Al2" className="section">
                 <div className="blockText">
                     <p>Les loups sont des prédateurs de premier plan qui ont des effets bénéfiques de grande envergure sur des écosystèmes entiers - y compris la structure des rivières.</p>
                 </div>
