@@ -73,10 +73,10 @@ class App extends Component {
         <Load />
         <Home /> 
         <Choice />
-        <Quizz  question={'Question 1'}
+        <Quizz  question={'À ton avis, que chassent les loups ?'}
                 goodAnswer={'wapitis'}
                 badAnswer={['ours','canards']}
-                ref={this.inputRef} />
+                image={'/images/loup_small_thumbnail.svg'} />
         {/* <Problem/> */}
       </div>
     );

@@ -64,16 +64,18 @@ class QuizzContainer extends Component {
         return(
             <div className="quizzContainer">
                 <p className="quizzQuestion">{this.props.question}</p>
-                <p className="quizzContainer_answerTitle">Bonne réponse !</p>
-                <p className="quizzContainer_answerText">{this.props.goodAnswer} est bien la proie du loup.</p>
+                <p className="answerTitle">Bonne réponse !</p>
+                <p className="answerText">{this.props.goodAnswer} est bien la proie du loup.</p>
+                <img src={this.props.image}></img>
             </div>
         )
     } else if (!this.state.displayQuestions && !this.state.displayRight && this.state.displayWrong) {
         return(
             <div className="quizzContainer">
                 <p className="quizzQuestion">{this.props.question}</p>
-                <p className="quizzContainer_badAnswerTitle">Mauvaise réponse...</p>
-                <p className="quizzContainer_badAnswerText">le loup chasse en particulier le {this.props.goodAnswer}</p>
+                <p className="badAnswerTitle">Mauvaise réponse...</p>
+                <p className="answerText">le loup chasse en particulier le {this.props.goodAnswer}</p>
+                <img src={this.props.image}></img>
             </div> 
         )
     } else {
@@ -83,6 +85,7 @@ class QuizzContainer extends Component {
                 <input onClick={this.checkAnswer} className="quizzAnswer" type="submit" value={this.props.badAnswer[0]} ref={this.inputRef} autoFocus/>
                 <input onClick={this.checkAnswer} className="quizzAnswer" type="submit" value={this.props.badAnswer[1]} ref={this.inputRef} autoFocus />
                 <input onClick={this.checkAnswer} className="quizzAnswer" type="submit" value={this.props.goodAnswer} ref={this.inputRef} autoFocus/>
+                <img src={this.props.image}/>
             </div> 
          )
     }
