@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import '../../assets/style/Home.scss';
 import Home from './Home';
-import video from '../../../src/assets/video/final_wolves.mp4';
+import video from '../../assets/video/final_wolves.mp4';
 
 class HomeContainer extends Component {
 
@@ -9,11 +10,7 @@ class HomeContainer extends Component {
       src: video,
       title: 'click to play/pause',
     },
-    paused : false
-  }
-
-  skipVideo = (e) => {
-    console.log('skip')
+    paused : false,
   }
 
   clickVideo = (e) => {
@@ -31,13 +28,23 @@ class HomeContainer extends Component {
     }
   }
 
+  startVideo = () => {
+    let video = document.getElementById("video");
+    let introVideo = document.getElementById("introVideo");
+
+    video.play();
+    introVideo.style.display="none";
+  }
+
   render(){
     console.log(this.state.videoOptions)
     return ( 
       <Home 
         videoOptions = {this.state.videoOptions}
-        clickVideo = {this.clickVideo}
-        skipVideo = {this.skipVideo}
+        clickVideo = {this.clickVideo} 
+        skipVideo = {this.props.skipVideo}
+        endVideo = {this.props.endVideo}
+        startVideo = {this.startVideo}
       />
     );
   }

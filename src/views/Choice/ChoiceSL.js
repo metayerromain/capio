@@ -11,7 +11,9 @@ class ChoiceSL extends Component {
 
     render() {
         return(
-            <p>Sl</p>
+            <section id="Sl">
+                <button>Test</button>
+            </section>
         )
     }
 }

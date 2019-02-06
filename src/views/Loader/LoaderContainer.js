@@ -8,29 +8,38 @@ class LoaderContainer extends Component {
         
         this.state= {
             numLoad: 0,
+            intervalId:"",
         }
+    }
+
+    componentDidMount() {
+        let intervalId = setInterval(() => this.loading(), 60);
+
+        this.setState({
+            intervalId: intervalId,
+        })
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.state.intervalId)
     }
 
     loading = () => {
         let bgLoading = document.getElementById('bgLoading');
         let loading = document.getElementById('Loading');
 
-        bgLoading.style.opacity = 1;
-
         if (this.state.numLoad <= 99) {
             this.setState({
                 numLoad: this.state.numLoad +1,
             })
+            bgLoading.style.opacity = 1;
         } else {
             this.setState({
                 numLoad: 100
             })
-            loading.style.opacity = 0;
+            loading.style.opacity=0;
+            setTimeout(function(){ loading.style.display="none"; }, 1800)
         }
-    }
-
-    componentDidMount() {
-        setInterval(() => this.loading(), 60)
     }
 
     render() {

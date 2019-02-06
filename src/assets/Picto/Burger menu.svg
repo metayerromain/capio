@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="43px" viewBox="0 0 56 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Burger menu</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="6-AL" transform="translate(-1341.000000, -44.000000)" fill-rule="nonzero" stroke="#F5FBEF" stroke-width="3">
+            <g id="Burger-menu" transform="translate(1343.000000, 45.000000)">
+                <path d="M0.194543248,0.5 L51.6853224,0.5" id="Line-3"></path>
+                <path d="M0.194543248,20.5 L42.1541488,20.5" id="Line-3"></path>
+                <path d="M0.194543248,40.5 L25.9399328,40.5" id="Line-3"></path>
+            </g>
+        </g>
+    </g>
+</svg>

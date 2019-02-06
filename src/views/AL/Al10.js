@@ -8,11 +8,22 @@ class Al10 extends Component {
         super(props)
 
         this.state = {
-            
+            contents: [],
+            images: []
         }
     }
+    componentDidMount() {
+        fetch('http://localhost:8888/capio/api/content/read.php')
+        .then(response => response.json())
+        .then(data => this.setState({ contents: data.contents }));
 
+        fetch('http://localhost:8888/capio/api/images/read.php')
+        .then(response => response.json())
+        .then(data => this.setState({ images: data.images }));
+  
+    }
     render () {
+
         const params = {
             slidesPerView: 3,
             spaceBetween: 100,

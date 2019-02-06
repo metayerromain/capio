@@ -6,11 +6,14 @@ class Al4 extends Component {
         super(props)
 
         this.state = {
-            
+            contents: [],
+            images: []
         }
     }
+
  
     render () {
+
         return (
             <div id="Al4" class="section grain">
                 <div className="container">
