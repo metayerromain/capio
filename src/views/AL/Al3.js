@@ -12,7 +12,7 @@ class Al3 extends Component {
 
     render () {
         return (
-            <div id="Al3" class="section grain">
+            <div id="Al3" className="section grain">
                 <div className="container-fluid">
                     <div className="row jc-end">
                         <div className="col-12 col-md-6">

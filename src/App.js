@@ -12,8 +12,10 @@ import './assets/style/grain.scss';
 
 //import components
 // import Home from './views/Home/HomeContainer';
+// eslint-disable-next-line
 import Load from './views/Loader/LoaderContainer';
 import Choice from './views/Choice/ChoiceContainer';
+// eslint-disable-next-line
 import Test from './views/Test';
 
 import './App.css';
@@ -66,7 +68,7 @@ class App extends Component {
         <ul>
           {images.map(image =>
             <li key={image.id}>
-              <img src={image.img}></img>
+              <img alt={image.id} src={image.img}></img>
             </li>
           )}
           {contents.map(content =>
