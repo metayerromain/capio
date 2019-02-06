@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
-import './assets/style/Reset.scss'
-import ReactDOM from 'react-dom';
+
+//import dependencies
+import 'flexboxgrid'
 import "gsap";
-import ReactFullpage from '@fullpage/react-fullpage'; // will return static version on server and "live" version on client
-import "fullpage.js/vendors/scrolloverflow";
-import Home from './views/Home/HomeContainer';
+
+//import css
+import './assets/style/fonts.scss';
+import './assets/style/Reset.scss';
+import './assets/style/content.scss';
+import './assets/style/grain.scss';
+
+//import components
+// import Home from './views/Home/HomeContainer';
 import Load from './views/Loader/LoaderContainer';
 import Choice from './views/Choice/ChoiceContainer';
 import Test from './views/Test';
@@ -69,8 +76,8 @@ class App extends Component {
             </li>
           )}
         </ul>
-        <Load />
-        <Home /> 
+        {/* <Load />
+        <Home />  */}
         <Choice />
         {/* <Problem/> */}
       </div>
