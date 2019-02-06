@@ -25,7 +25,7 @@ class Al14 extends Component {
 
         return (
 
-            <div id="Al14" class="section grain">
+            <div id="Al14" className="section grain">
                 <div className="container">
                     <div className="row pt-xl pt-down-0">
                         <div className="col-md-12 zIndex-5">

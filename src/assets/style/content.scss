@@ -7,12 +7,46 @@
 |
 */
 
+.intro-anim{
+    opacity: 0;
+    position: absolute;
+    width: 70%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+}
 
+.modal{
+    visibility: hidden;
+    position: absolute;
+    z-index: 666;
+    background-color: white;
+    padding: 30px;
+    border: 2px solid #648244;
+    .modal-title{
+        font-weight: bold;
+        color: #648244;
+    }
+}
 
 body{
     font-family: 'source_sans_pro';
     font-size: 24px;
     background: #000;
+}
+.logo {
+    position: fixed;
+    z-index: 1000000;
+    color: #fff;
+    left: 0;
+    top: 0;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
 }
 .anim{
     opacity: 0;

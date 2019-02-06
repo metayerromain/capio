@@ -1,6 +1,9 @@
 #choices {
     display: flex;
     flex-direction: row;
+    .fp-tableCell{
+        display: flex !important;
+    }
     .buttonSl {
         height: 100vh;
         width: 50%;
@@ -11,6 +14,7 @@
         flex-direction: column;
         justify-content: center;
         transition: .5s filter;
+        text-decoration: none;
         &:hover {
             filter: grayscale(70%);
             p {
@@ -37,6 +41,7 @@
         flex-direction: column;
         justify-content: center;
         transition: .5s filter;
+        text-decoration: none;
         &:hover {
             filter: grayscale(70%);
             p {

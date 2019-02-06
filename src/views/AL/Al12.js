@@ -24,7 +24,7 @@ class Al12 extends Component {
     render () {
 
         return (
-            <div id="Al12" class="section grain">
+            <div id="Al12" className="section grain">
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-12 col-md-6">

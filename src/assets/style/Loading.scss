@@ -1,6 +1,9 @@
 #Loading {
+    position: absolute;
+    width: 100%;
     background-color: #000;
     transition: 3s opacity;
+    z-index: 10;
     #bgLoading {
         background: url("../img/Load.png") no-repeat;
         height: 100vh;

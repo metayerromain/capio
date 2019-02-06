@@ -1,0 +1,38 @@
+#problemIntro {
+    .fp-tableCell {
+        display: contents !important;
+    }
+    .problem {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        color: #fff;
+        text-align: center;
+        height: 100vh;
+        width: 100%;
+        background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../img/poster.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        h3 {
+            font-size: 48px;
+            margin: auto;
+        }
+        .infoScroll {
+            font-size: 17px;
+            margin: 25px auto;
+            font-style: italic;
+        }
+        img {
+            margin-bottom: 25px;
+            height: 45px;
+        }
+    }
+    .intro1 {
+        display: block;
+        height: 100vh;
+        width: 100%;
+        background-color: bisque;
+    }
+}
