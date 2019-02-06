@@ -3,8 +3,6 @@ import '../../assets/style/Al.scss';
 import '../../assets/style/swiper.scss';
 import Swiper from 'react-id-swiper';
 
-// import Lexique from '../lexique';
-
 class Al1 extends Component {
     constructor(props) {
         super(props)
@@ -24,9 +22,42 @@ class Al1 extends Component {
     hideModal = ( event ) =>
     {
         this.el.style.visibility = "hidden";
+        this.state = {
+            contents: [],
+            images: []
+        }
+    }
+    componentDidMount() {
+        fetch('http://localhost:8888/capio/api/content/read.php')
+        .then(response => response.json())
+        .then(data => this.setState({ contents: data.contents }));
+
+        fetch('http://localhost:8888/capio/api/images/read.php')
+        .then(response => response.json())
+        .then(data => this.setState({ images: data.images }));
+  
     }
 
     render () {
+        // console.log('before render', contents);
+        // const { contents, images } = this.state;
+        // console.log('after state', contents);
+
+
+        // return (
+            
+        //     <div id="Al1" className="section">
+        //     {contents.map((content) =>
+        //         <div key={content.id} className="blockText">
+        //             <p>{content.description}</p>
+        //         </div>
+        //     )}
+        //     {images.map((image) =>
+        //         <div key={image.id} className="img1"><img src={image.img}></img></div>
+        //         )}
+        //         <div className="img2"></div>
+        //         <div className="img3"></div>
+              
         const params = {
             slidesPerView: 3,
             spaceBetween: 100,

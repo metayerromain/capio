@@ -11,10 +11,11 @@ import './assets/style/content.scss';
 import './assets/style/grain.scss';
 
 //import components
-// import Home from './views/Home/HomeContainer';
+import Home from './views/Home/HomeContainer';
 import Load from './views/Loader/LoaderContainer';
 import Choice from './views/Choice/ChoiceContainer';
-import Test from './views/Test';
+import Quizz from './views/Quizz/QuizzContainer';
+
 
 import './App.css';
 
@@ -23,8 +24,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      images: [],
-      contents:[],
+    
     };
  
   }
@@ -33,37 +33,31 @@ class App extends Component {
   componentDidMount(){
 
 
-    fetch('http://localhost:8888/capio/api/images/read.php')
-    .then(response => response.json())
+    // fetch('http://localhost:8888/capio/api/images/read.php')
+    // .then(response => response.json())
     // .then(data => {
     //     console.log(data);
   
     //   })
-    .then(data => this.setState({ images: data.images }));
-
-
-    fetch('http://localhost:8888/capio/api/content/read.php')
-    .then(response => response.json())
-    .then(data => this.setState({ contents: data.contents }));
-            
+    
   }
  
 
   render() {
-    console.log("start render images", this.state.images);
-    console.log("start render content", this.state.contents);
+    // console.log("start render images", this.state.images);
+    // console.log("start render content", this.state.contents);
 
 
-    const { images, contents } = this.state;
-    console.log("after state images",images);
-    console.log("after state content",contents);
+    // const { images, contents } = this.state;
+    // console.log("after state images",images);
+    // console.log("after state content",contents);
 
 
 
     return (
       <div>
         {/* <Test /> */}
-        <ul>
+        {/* <ul>
           {images.map(image =>
             <li key={image.id}>
               <img src={image.img}></img>
@@ -75,10 +69,14 @@ class App extends Component {
             <p>{content.description}</p>
             </li>
           )}
-        </ul>
-        {/* <Load />
-        <Home />  */}
+        </ul> */}
+        <Load />
+        <Home /> 
         <Choice />
+        <Quizz  question={'À ton avis, que chassent les loups ?'}
+                goodAnswer={'wapitis'}
+                badAnswer={['ours','canards']}
+                image={'/images/loup_small_thumbnail.svg'} />
         {/* <Problem/> */}
       </div>
     );
