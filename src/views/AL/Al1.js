@@ -3,14 +3,25 @@ import '../../assets/style/Al.scss';
 import '../../assets/style/swiper.scss';
 import Swiper from 'react-id-swiper';
 
-import Lexique from '../lexique';
-
-import '../../assets/img/1 AL/fond1.jpg';
-
 class Al1 extends Component {
     constructor(props) {
         super(props)
+        this.el = document.querySelector('.modal');
+    }
 
+    displayModal = ( event )=>
+    {   
+        var indexEl = event.target.getAttribute('data-id');
+        var el = this.el;
+        el.style.top = event.pageY +"px";
+        el.style.left = event.pageX  +"px";
+        el.style.visibility = "visible";
+        el.innerHTML = "<div class='modal-title'>"+this.props.lexique[indexEl].title +"</div>" + "<div class='modal-content'>"+this.props.lexique[indexEl].content+"</div>";
+    }
+
+    hideModal = ( event ) =>
+    {
+        this.el.style.visibility = "hidden";
         this.state = {
             contents: [],
             images: []
@@ -68,16 +79,11 @@ class Al1 extends Component {
           }
         return (
             <div id="Al1" className="section grain">
-                <Lexique 
-                    lexiqueObject={[{title:'titre1', content:'contenu1'},
-                    {title:'titre2', content:'contenu2'}
-                    ]}
-                />
                 <div className="container pt-xl">
                     <div className="row">
                         <div className="col-12 col-md-8 container">
                             <div className="blockText animText">
-                                Nous savons <span className="lexique-word">tous</span> que les loups tuent différentes espèces d’animaux mais nous sommes moins au courant qu’ils ont donné la vie à beaucoup d’autres !
+                                Nous savons <span data-id="0" className="lexique-word" onMouseEnter={ this.displayModal } onMouseLeave={ this.hideModal }>tous</span> que les loups tuent différentes espèces d’animaux mais nous <span data-id="1" className="lexique-word" onMouseEnter={ this.displayModal } onMouseLeave={ this.hideModal  }>sommes</span> moins au courant qu’ils ont donné la vie à beaucoup d’autres !
                             </div>
                         </div>
                     </div>
@@ -85,7 +91,7 @@ class Al1 extends Component {
                 <div className="container-fluid mt-md">
                     <div className="jc-around">
                     <Swiper {...params}>
-                        <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + require("../../assets/img/1 AL/fond1.jpg") + ')'}}></div>
+                        <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + "castor1.jpg" + ')'}}></div>
                         <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + require("../../assets/img/1 AL/fond1.jpg") + ')'}}></div>
                         <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + require("../../assets/img/1 AL/fond1.jpg") + ')'}}></div>
                         <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + require("../../assets/img/1 AL/fond1.jpg") + ')'}}></div>
