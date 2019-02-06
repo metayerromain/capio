@@ -1,0 +1,352 @@
+/*
+|---------------------------------------------------------------
+| Helpers
+|---------------------------------------------------------------
+| Define helper classes
+|
+|
+*/
+
+.modal{
+    visibility: hidden;
+    position: absolute;
+    z-index: 666;
+    background-color: white;
+    padding: 30px;
+    border: 2px solid #648244;
+    .modal-title{
+        font-weight: bold;
+        color: #648244;
+    }
+}
+
+body{
+    font-family: 'source_sans_pro';
+    font-size: 24px;
+    background: #000;
+}
+.anim{
+    opacity: 0;
+}
+.animText{
+    opacity: 0;
+}
+.fp-tableCell{
+    display: block !important;
+}
+.col-12{
+    @media (max-width: 991.98px) { 
+        width: 100%;
+    }
+}
+.container-fluid{
+    padding: 0;
+}
+.fp-scroller{
+    height: 100%;
+}
+.mt-half{
+    margin-top: 50vh;
+}
+.mt-sm{
+    margin-top: 15px;
+}
+.mt-md{
+    margin-top: 30px;
+}
+.mt-lg{
+    margin-top: 50px;
+}
+.pt-xl{
+    padding-top: 150px;
+}
+.pt-down-md{
+    @media (max-width: 991.98px) { 
+        padding-top: 50px;
+    }
+}
+.pt-down-0{
+    @media (max-width: 991.98px) { 
+        padding-top: 0;
+    }
+}
+.mt-down-md{
+    @media (max-width: 991.98px) { 
+        margin-top: 50px;
+    }
+}
+.mt-down-0{
+    @media (max-width: 991.98px) { 
+        margin-top: 0;
+    }
+}
+
+.blockText-resp-middle{
+    @media (max-width: 991.98px) { 
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0 10px!important;
+    }
+}
+.blockText-down-center{
+    @media (max-width: 991.98px) { 
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50vh;
+        width: 70%;
+        margin-top: -50px;
+    }  
+}
+
+.h-50{
+    @media (max-width: 991.98px) { 
+        height: 50vh;
+    }
+}
+.h-100{
+    @media (max-width: 991.98px) { 
+        height: 100vh;
+    }
+}
+
+// LG
+@media (max-width: 1199.98px) { }
+
+.zIndex-5{
+    z-index: 5;
+}
+.zIndex-3{
+    z-index: 3;
+}
+.zIndex-2{
+    z-index: 2;
+}
+
+.blockText {
+    z-index: 10;
+    color: #fff;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: light;
+    @media (max-width: 991.98px) { 
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+.middle-block{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50vh;
+    width: 50%;
+    margin-top: -50px;
+    background-color: rgba(0, 0, 0, .3);
+    @media (max-width: 991.98px) { 
+        width: 70%;
+    }
+}
+
+.img{
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+        @media (max-width: 991.98px) { 
+            &:not(.swiper-slide){
+                position: relative !important;
+                width: 100% !important;
+                left: 0 !important;
+                right: 0 !important;
+                bottom: 0 !important;
+                top: 0 !important;
+            }
+        }
+}
+.img-h-1{
+    @media (max-width: 991.98px) { 
+        height: 300px !important;
+    }
+}
+.img-h-2{
+    @media (max-width: 991.98px) { 
+        height: calc(100vh / 5) !important;
+    }
+}
+.img-h-3{
+    @media (max-width: 991.98px) { 
+        height: calc(100vh / 6) !important;
+    }
+}
+   /*
+  |
+  | Swiper
+  |----------------------------
+  |
+  */
+  .swiper-slide{
+      height: 300px !important;
+  }
+  .swiper-container{
+      overflow: visible !important;
+  }
+  .swiper-pagination-bullets{
+      bottom: -30px !important;
+      .swiper-pagination-bullet{
+          width: 10px !important;
+          height: 10px !important;
+          background: #FFF !important;
+      }
+      .swiper-pagination-bullet-active{
+          background: #000 !important;
+      }
+  }
+  
+  /*
+  |
+  | Lexique
+  |----------------------------
+  |
+  */
+
+  .lexique-word{
+      position: relative;
+      &:before{
+          content:"";
+          position: absolute;
+          left: 0;
+          display: block;
+          background: #69B53A;
+          width: 100%;
+          height: 10px;
+          bottom: 2px;
+          z-index: -1;
+      }
+  }
+
+  .lexique{
+      background: #FFF;
+  }
+
+  /*
+  |
+  | Text Transform
+  |----------------------------
+  |
+  */
+  .tt-u{text-transform: uppercase !important}
+  .tt-l{text-transform: lowercase !important}
+  .tt-c{text-transform: capitalize !important}
+  
+  /*
+  |
+  | Underline
+  |------------
+  |
+  */
+  .td-u{text-decoration: underline !important}
+  .td-n{text-decoration: none !important}
+  
+  /*
+  |
+  | Font styles
+  |--------------
+  |
+  */
+  .fs-i{font-style: italic !important}
+  .fs-o{font-style: oblique !important}
+  .fs-n{font-style: normal !important}
+  
+  /*
+  |
+  | Full width mobile
+  |--------------------
+  |
+  */
+
+  /*
+  |
+  | Background
+  |-------------
+  |
+  */
+  .bg-cover{
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+  }
+  
+  /*
+  |
+  | Overflows
+  |-------------
+  |
+  */
+  .o-v{overflow: visible !important;}
+  .ox-v{overflow-x: visible !important;}
+  .oy-v{overflow-y: visible !important;}
+  .o-h{overflow: hidden !important;}
+  .ox-h{overflow-x: hidden !important;}
+  .oy-h{overflow-y: hidden !important;}
+  
+  /*
+  |
+  | Positions
+  |-------------
+  |
+  */
+  .p-r{position: relative !important;}
+  .p-a{position: absolute !important;}
+  .p-f{position: fixed !important;}
+  
+  /*
+  |
+  | Flex Alignment
+  |-----------------
+  |
+  */
+  .ai-start{ align-items: flex-start; }
+  .ai-end{ align-items: flex-end; }
+  .ai-center{ align-items: center; }
+  .ai-baseline{ align-items: baseline; }
+  .ai-stretch{ align-items: stretch; }
+  
+  /*
+  |
+  | Flex Justify
+  |---------------
+  |
+  */
+  .jc-start{ justify-content: flex-start; }
+  .jc-end{ justify-content: flex-end; }
+  .jc-center{ justify-content: center; }
+  .jc-between{ justify-content: space-between; }
+  .jc-around{ justify-content: space-around; }
+  
+  /*
+  |
+  | White space
+  |--------------
+  |
+  */
+  .ws-normal{ white-space: normal; }
+  .ws-nowrap{ white-space: nowrap; }
+  .ws-pre{ white-space: pre; }
+  .ws-pre-wrap{ white-space: pre-wrap; }
+  .ws-pre-line{ white-space: pre-line; }
+
+    /*
+  |
+  | Display
+  |--------------
+  |
+  */
+  .d-down-none{
+    @media (max-width: 991.98px) { 
+        display: none !important;
+    }
+  }

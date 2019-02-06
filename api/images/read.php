@@ -28,7 +28,7 @@ if($num>0){
  
 // products array
 $images_arr=array();
-$images_arr["records"]=array();
+$images_arr["images"]=array();
 
 // retrieve our table contents
 // fetch() is faster than fetchAll()
@@ -44,7 +44,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
         "img" => $img
     );
 
-    array_push($images_arr["records"], $images_item);
+    array_push($images_arr["images"], $images_item);
 }
 
 // set response code - 200 OK
