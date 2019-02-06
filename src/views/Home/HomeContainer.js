@@ -31,7 +31,7 @@ class HomeContainer extends Component {
   startVideo = () => {
     let video = document.getElementById("video");
     let introVideo = document.getElementById("introVideo");
-
+    console.log(video)
     video.play();
     introVideo.style.display="none";
   }

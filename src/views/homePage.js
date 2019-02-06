@@ -6,8 +6,8 @@ class HomePage extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            home: false,
-            problem: true,
+            home: true,
+            problem: false,
         }
     }
 

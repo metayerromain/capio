@@ -12,7 +12,7 @@ class Choice extends Component {
 
     render() {
         return(
-            <section id="choices">
+            <section id="choices" className="section">
                 <Link to={`/choiceAl`} className="buttonAl">
                     <p>Yellowtone <br /> avec les loups</p>
                 </Link>
