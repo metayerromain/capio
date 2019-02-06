@@ -9,6 +9,14 @@
 
 .intro-anim{
     opacity: 0;
+    position: absolute;
+    width: 70%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
 }
 
 .modal{
