@@ -2,16 +2,27 @@ import React, { Component } from 'react';
 
 
 class LexiqueModal extends Component {
-    constructor(props){
+    constructor(props) {
       super(props)
+      this.state = {
+          show: true
+      };
     }
 
+    hideModal = () => {
+        this.setState({
+            show: false
+        });
+    };
+
     lexiqueItems = () => {
-        var items = this.props.lexiqueObject.map(function(item, index){
+        var items = this.props.lexiqueObject.map(function(item, index) {
             return(
-                <div key={ index } id="lexique" className="lexique">
-                    <h1>{item.title}</h1>
-                    <p>{item.content}</p>
+                <div className="row center-xs">
+                    <div key={ index } id="lexique" className="lexique col-xs-4 bg-modal">
+                        <h1>{item.title}</h1>
+                        <p>{item.content}</p>
+                    </div>
                 </div>
             )
         });

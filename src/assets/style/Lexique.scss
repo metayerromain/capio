@@ -1,0 +1,44 @@
+.map1 {
+  background: url("../img/Lexique/map.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+}
+
+.bg-modal {
+  width: 470px;
+  height: 300px;
+  position: absolute;
+  margin: 150px 0;
+  background-color: white;
+  z-index: 1;
+  border: 2px solid green;
+}
+
+.lexique-icon {
+  background: url("../img/Lexique/plus.svg");
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  position: relative;
+}
+.lexique-container {
+  margin: 0 auto;
+}
+
+#icon1 {
+  top: 180px;
+  left: 250px;
+}
+
+#icon2 {
+  margin: 0 auto;
+  top: 200px;
+}
+
+#icon3 {
+  top: 270px;
+  left: 430px;
+}

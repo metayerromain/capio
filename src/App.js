@@ -79,9 +79,9 @@ class App extends Component {
             </li>
           )}
         </ul>
-        {/* <Load />
-        <Home />  */}
-        <Choice />
+        {/* <Load /> */}
+        {/* <Home /> */}
+        {/* <Choice /> */}
         {/* <Problem/> */}
         <Lexique />
       </div>
