@@ -7,7 +7,18 @@
 |
 */
 
-
+.modal{
+    visibility: hidden;
+    position: absolute;
+    z-index: 666;
+    background-color: white;
+    padding: 30px;
+    border: 2px solid #648244;
+    .modal-title{
+        font-weight: bold;
+        color: #648244;
+    }
+}
 
 body{
     font-family: 'source_sans_pro';
