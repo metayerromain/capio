@@ -1,43 +1,67 @@
 import React, { Component } from 'react';
-import './assets/style/Reset.scss'
-// import ReactDOM from 'react-dom';
-// import * as ScrollMagic from 'scrollmagic'
+
+//import dependencies
+import 'flexboxgrid'
+import "gsap";
+
+//import css
+import './assets/style/fonts.scss';
+import './assets/style/Reset.scss';
+import './assets/style/content.scss';
+import './assets/style/grain.scss';
+
+//import components
 // import Home from './views/Home/HomeContainer';
 // import Load from './views/Loader/LoaderContainer';
 // import Choice from './views/Choice/ChoiceContainer';
-import Lexique from './views/Lexique/LexiqueContainer';
 // import Test from './views/Test';
 
 import './App.css';
 
 class App extends Component {
-
-  // componentDidMount(){
-    // var anim = ReactDOM.findDOMNode(this).querySelector('.anim');
-    // this.myTween = TweenLite.fromTo(anim, 1, { y: 100}, {y:0});
-
-	// var controller = new ScrollMagic.Controller();
-
-	// 	var scene = new ScrollMagic.Scene({
-  //             triggerElement: ReactDOM.findDOMNode(this).querySelector('.section'),
-  //             triggerHook: .5 
-	// 					})
-	// 					.setTween("#animate1", 0.5, {backgroundColor: "green", scale: 2.5}) 
-	// 					.addIndicators() 
-  //           .addTo(controller);
+  // constructor(props) {
+  //   super(props);
+    
+     // fetch('http://localhost:8888/capio/api/content/read.php')
+     // .then(data => this.setState({ images: data.images }))
+     // .then(response => response.json())
+     // .then(data => this.setState({ contents: data.contents }))
             
   // }
+ 
 
   render() {
+    // console.log("start render images", this.state.images);
+    // console.log("start render content", this.state.contents);
+
+
+    const { images, contents } = this.state;
+    console.log("after state images",images);
+    console.log("after state content",contents);
+
+
+
     return (
       <div>
-          {/* <Test /> */}
-          {/* <Load />
-          <Home /> 
-          <Choice /> */}
-        {/* Here show the lexique only if the questionnary is done */}
-         <Lexique />
+        {/* <Test /> */}
+        <ul>
+          {images.map(image =>
+            <li key={image.id}>
+              <img src={image.img} alt={image.id}></img>
+            </li>
+          )}
+          {contents.map(content =>
+            <li key={content.id}>
+            <p>{content.title}</p>
+            <p>{content.description}</p>
+            </li>
+          )}
+        </ul>
+        {/* <Load />
+        <Home />  */}
+        {/* <Choice /> */}
         {/* <Problem/> */}
+
       </div>
     );
   }
