@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../../assets/style/Al.scss';
+import '../assets/style/Al.scss';
 
-class Al1 extends Component {
+class Api extends Component {
     constructor(props) {
         super(props)
 
@@ -30,13 +30,13 @@ class Al1 extends Component {
         return (
             
             <div id="Al1" className="section">
-            {contents.map((content) =>
-                <div key={content.id} className="blockText">
+            {contents.map(content =>
+                <div className="blockText">
                     <p>{content.description}</p>
                 </div>
             )}
-            {images.map((image) =>
-                <div key={image.id} className="img1"><img src={image.img}></img></div>
+            {images.map(image=>
+                <div className="img1"><img src={image.img}></img></div>
                 )}
                 <div className="img2"></div>
                 <div className="img3"></div>
@@ -46,4 +46,4 @@ class Al1 extends Component {
     }
 }
 
-export default Al1;
+export default Api;

@@ -6,20 +6,40 @@ class Al2 extends Component {
         super(props)
 
         this.state = {
-            
+            contents: [],
+            images: []
         }
+    }
+    componentDidMount() {
+        fetch('http://localhost:8888/capio/api/content/read.php')
+        .then(response => response.json())
+        .then(data => this.setState({ contents: data.contents }));
+
+        fetch('http://localhost:8888/capio/api/images/read.php')
+        .then(response => response.json())
+        .then(data => this.setState({ images: data.images }));
+  
     }
 
     render () {
+        const { contents, images } = this.state;
         return (
             <div id="Al2" class="section">
-                <div className="blockText">
-                    <p>Les loups sont des prédateurs de premier plan qui ont des effets bénéfiques de grande envergure sur des écosystèmes entiers - y compris la structure des rivières.</p>
+            {contents.map((content) =>
+                <div className="blockText" key={content.id}>
+                    <p>{content.description}</p>
                 </div>
-                <div className="blockText2">
-                    <p>Dès que les loups ont été réintroduits dans le parc, même en petit nombre, l’impact fut spectaculaire. Les influences bénéfiques des loups réintroduits sont devenues presque immédiatement apparentes.</p>
+            )}
+            {contents.map((content) =>
+                <div className="blockText2" key={content.id}>
+                    <p>{content.description}</p>
                 </div>
-                <div className="img1"></div>
+            )}
+            {images.map((image) =>
+                <div key={image.id} className="img1">
+                    <img src={image.img}></img>
+                </div>
+            )}
                 <div className="img2"></div>
             </div>
         )
