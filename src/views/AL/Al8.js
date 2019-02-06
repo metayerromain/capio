@@ -6,12 +6,24 @@ class Al8 extends Component {
         super(props)
 
         this.state = {
-            
+            contents: [],
+            images: []
         }
     }
+    componentDidMount() {
+        fetch('http://localhost:8888/capio/api/content/read.php')
+        .then(response => response.json())
+        .then(data => this.setState({ contents: data.contents }));
 
+        fetch('http://localhost:8888/capio/api/images/read.php')
+        .then(response => response.json())
+        .then(data => this.setState({ images: data.images }));
+  
+    }
     render () {
+
         return (
+
             <div id="Al8" class="section grain">
                 <div className="blockText middle-block animText blockText-down-center">
                     Nous savons tous que les loups tuent différentes espèces d’animaux mais nous sommes moins au courant qu’ils ont donné la vie à beaucoup d’autres !

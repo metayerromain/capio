@@ -6,12 +6,25 @@ class Al14 extends Component {
         super(props)
 
         this.state = {
-            
+            contents: [],
+            images: []
         }
+    }
+    componentDidMount() {
+        fetch('http://localhost:8888/capio/api/content/read.php')
+        .then(response => response.json())
+        .then(data => this.setState({ contents: data.contents }));
+
+        fetch('http://localhost:8888/capio/api/images/read.php')
+        .then(response => response.json())
+        .then(data => this.setState({ images: data.images }));
+  
     }
 
     render () {
+
         return (
+
             <div id="Al14" class="section grain">
                 <div className="container">
                     <div className="row pt-xl pt-down-0">
