@@ -1,14 +1,21 @@
 import React, { Component } from 'react';
-import './assets/style/Reset.scss'
-import ReactDOM from 'react-dom';
-import {TweenLite} from "gsap/TweenMax";
-import * as ScrollMagic from 'scrollmagic'
-import Home from './views/Home/HomeContainer';
+
+//import dependencies
+import 'flexboxgrid'
+import "gsap";
+
+//import css
+import './assets/style/fonts.scss';
+import './assets/style/Reset.scss';
+import './assets/style/content.scss';
+import './assets/style/grain.scss';
+
+//import components
+// import Home from './views/Home/HomeContainer';
 import Load from './views/Loader/LoaderContainer';
 import Choice from './views/Choice/ChoiceContainer';
 import Quizz from './views/Quizz/QuizzContainer';
 
-// import Test from './views/Test';
 
 import './App.css';
 
@@ -24,8 +31,7 @@ class App extends Component {
 
  
   componentDidMount(){
-    // var anim = ReactDOM.findDOMNode(this).querySelector('.anim');
-    // this.myTween = TweenLite.fromTo(anim, 1, { y: 100}, {y:0});
+
 
     // fetch('http://localhost:8888/capio/api/images/read.php')
     // .then(response => response.json())
@@ -33,15 +39,9 @@ class App extends Component {
     //     console.log(data);
   
     //   })
-    // .then(data => this.setState({ images: data.images }));
-
-
-    // fetch('http://localhost:8888/capio/api/content/read.php')
-    // .then(response => response.json())
-    // .then(data => this.setState({ contents: data.contents }));
-
-            
+    
   }
+ 
 
   render() {
     // console.log("start render images", this.state.images);
