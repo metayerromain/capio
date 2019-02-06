@@ -11,7 +11,7 @@ import './assets/style/content.scss';
 import './assets/style/grain.scss';
 
 //import components
-// import Home from './views/Home/HomeContainer';
+import Home from './views/Home/HomeContainer';
 import Load from './views/Loader/LoaderContainer';
 import Choice from './views/Choice/ChoiceContainer';
 import Quizz from './views/Quizz/QuizzContainer';
