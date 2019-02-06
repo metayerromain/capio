@@ -5,7 +5,8 @@ import Menu from '../Menu/MenuContainer';
 import Scroll from '../../assets/Picto/noun_scrolling_2058570.svg';
 import '../../assets/style/ProblemIntro.scss';
 import ReactFullpage from "@fullpage/react-fullpage";
-import { TimelineMax, Power3 } from 'gsap';
+// import { TimelineMax, Power3 } from 'gsap';
+import { TweenLite, TimelineMax, Linear, Back, Sine, Power3 } from 'gsap';
 
 
 class Problem extends Component {
@@ -22,11 +23,15 @@ class Problem extends Component {
                     
                     if(state.initialized){
                         var elementToAnim = document.querySelectorAll('.intro-anim');
-
-                        var timeline = new TimelineMax({paused: true});
-                        timeline.staggerFromTo(elementToAnim, 1, { autoAlpha: 0}, {autoAlpha: 1, ease: Power3.easeInOut}, 1, "start");
-                
-                        timeline.play();
+                        if(state.callback === "onLeave"){
+                            if(state.destination.index === 1){
+                                elementToAnim.forEach((element, i) => {
+                                    var tl = new TimelineMax({delay:i*7});
+                                    tl.to(element, 1, {autoAlpha:1})
+                                    tl.to(element, .5, {autoAlpha:0}, '6.6')
+                                });
+                            }
+                        }
                     }
 
                     return(
