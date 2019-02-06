@@ -22,8 +22,11 @@ class Intro1 extends Component {
                 <div className="intro-anim">
                     Ce qui a donné aux biologistes une occasion unique d'étudier ce qui se passe lorsqu'un prédateur supérieur retourne à un écosystème.
                 </div>
+                <div className="intro-anim">
+                    Ce qui a donné aux biologistes une occasion unique d'étudier ce qui se passe lorsqu'un prédateur supérieur retourne à un écosystème.
+                </div>
             </div>
-        )
+        ) 
     }
 }
 
