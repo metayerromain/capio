@@ -23,7 +23,7 @@ import IndexPage from './views/indexPage';
 // eslint-disable-next-line
 // import Load from './views/Loader/LoaderContainer';
 // import Choice from './views/Choice/ChoiceContainer';
-// import Lexique from './views/Lexique/LexiqueContainer';
+import Lexique from './views/Lexique/LexiqueContainer';
 // eslint-disable-next-line
 // import Test from './views/Test';
 // import Load from './views/Loader/LoaderContainer';
@@ -73,16 +73,16 @@ class App extends Component {
       // <Home />
       // <Choice />
       // <Problem/>
-      //   <Lexique />
+        <Lexique />
       // </div>
-      <Router>
-          <Fragment>
-            <Route exact path="/" component={HomePage} />
-            <Route path="/choiceAl" component={AlPage} />
-            <Route path="/choiceSl" component={SlPage} />
-            <Route path="/index" component={IndexPage} />
-          </Fragment>
-        </Router>
+      // <Router>
+      //     <Fragment>
+      //       <Route exact path="/" component={HomePage} />
+      //       <Route path="/choiceAl" component={AlPage} />
+      //       <Route path="/choiceSl" component={SlPage} />
+      //       <Route path="/index" component={IndexPage} />
+      //     </Fragment>
+      //   </Router>
 
       // <div>
       //   {/* <Test /> */}

@@ -13,8 +13,8 @@ class LexiqueContainer extends Component {
     };
     this.datas = [{
         key: 1,
-        title: "La reproduction recreative des chevres",
-        content: "La chevres des chevres des chevres"
+        title: "Le saviez-vous ?",
+        content: "Les os de l’aile de l’aigle sont très semblables à ceux de l’humain. Les plumes les plus importantes sur l’aile sont celles du bout, elles lui permettent de voler de façon plus stable dans les grands vents."
       },
       {
         key: 2,
@@ -24,17 +24,22 @@ class LexiqueContainer extends Component {
       {
         key: 3,
         title: "Le saviez-vous ?",
-        content: "Le wapiti a longtemps été considéré comme la plus grande des sous-espèces de cerf élaphe mais les analyses génétiques semblent montrer que le wapiti est plus proche du cerf sika."
+        content: "Toute une terminologie permet de distinguer le mâle de la femelle au cours des différents âges de leur vie: le mâle de la naissance à 6 mois est un faon, de 6 mois à 1 an, un hère, de 1 an à 2 ans on le nomme daguet et à partir de 2 ans, il devient cerf. "
       },
       {
         key: 4,
         title: "Le saviez-vous ?",
-        content: "Chevres"
+        content: "Le coyote est un personnage important de nombreux mythes et légendes amérindiennes. Il est décrit comme un personnage rusé, farceur, et parfois sournois, un peu comme le renard dans la culture européenne"
       }, 
       {
         key: 5,
         title: "Le saviez-vous ?",
-        content: "Chevres"
+        content: "Le wapiti a longtemps été considéré comme la plus grande des sous-espèces de cerf élaphe mais les analyses génétiques semblent montrer que le wapiti est plus proche du cerf sika."
+      },
+      {
+        key: 6,
+        title: "Le saviez-vous ?",
+        content: "Le faucon est considéré comme l'animal le plus rapide du monde. En effet, il atteint 389 kilomètres par heure en piqué, 46 à 110 km/h en vol battu (ou vol ramé) et 90 km/h en vol plané."
       }
     ];
   }
@@ -70,6 +75,7 @@ class LexiqueContainer extends Component {
         <div id="icon3" data-id="2" onClick={() => this.showModal(null, 2)} className="lexique-icon"></div>
         <div id="icon4" data-id="3" onClick={() => this.showModal(null, 3)} className="lexique-icon"></div>
         <div id="icon5" data-id="4" onClick={() => this.showModal(null, 4)} className="lexique-icon"></div>
+        <div id="icon6" data-id="5" onClick={() => this.showModal(null, 5)} className="lexique-icon"></div>
       </div>
     );
   }
