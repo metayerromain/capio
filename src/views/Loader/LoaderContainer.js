@@ -13,7 +13,7 @@ class LoaderContainer extends Component {
     }
 
     componentDidMount() {
-        let intervalId = setInterval(() => this.loading(), 60);
+        let intervalId = setInterval(() => this.loading(), 40);
 
         this.setState({
             intervalId: intervalId,

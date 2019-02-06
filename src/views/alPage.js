@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Menu from './Menu/MenuContainer';
 import Al from './Choice/ChoiceAL';
 import Sl from './Choice/ChoiceSL';
@@ -34,7 +35,9 @@ class AlPage extends Component {
         if(this.state.Al) {
             return(
                 <section id="alPage">
-                    <h1 className="logo">Capio</h1>
+                    <Link to={`/`} className="logo">
+                        <h1>Capio</h1>
+                    </Link>
                     <Menu />
                     <Al
                         showSl = {this.showSl}
@@ -44,7 +47,9 @@ class AlPage extends Component {
         } else if(this.state.Sl) {
             return(
                 <section id="alPage">
-                    <h1 className="logo">Capio</h1>
+                    <Link to={`/`} className="logo">
+                        <h1>Capio</h1>
+                    </Link>
                     <Menu />
                     <Sl
                         showCon = {this.showCon}
@@ -54,7 +59,9 @@ class AlPage extends Component {
         } else if(this.state.Conclusion) {
             return(
                 <section id="alPage">
-                    <h1 className="logo">Capio</h1>
+                    <Link to={`/`} className="logo">
+                        <h1>Capio</h1>
+                    </Link>
                     <Menu />
                     <Conclusion />
                 </section>

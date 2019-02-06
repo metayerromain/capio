@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Intro from './intro';
 import Choice from '../Choice/ChoiceContainer';
-import Menu from '../Menu/MenuContainer';
 import Scroll from '../../assets/Picto/noun_scrolling_2058570.svg';
 import '../../assets/style/ProblemIntro.scss';
 import ReactFullpage from "@fullpage/react-fullpage";
@@ -31,7 +30,6 @@ class Problem extends Component {
 
                     return(
                         <section id="problemIntro">
-                            <Menu />
                             <section id="fullpage-wrapper">
                                 <div className="problem section">
                                     <h3>Comment la réintroduction<br />
