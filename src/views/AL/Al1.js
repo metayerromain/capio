@@ -3,6 +3,10 @@ import '../../assets/style/Al.scss';
 import '../../assets/style/swiper.scss';
 import Swiper from 'react-id-swiper';
 
+// import Lexique from '../LexiqueModal';
+
+import '../../assets/img/1 AL/fond1.jpg';
+
 class Al1 extends Component {
     constructor(props) {
         super(props)

@@ -20,6 +20,12 @@ import IndexPage from './views/indexPage';
 
 // //import components
 // import Home from './views/Home/HomeContainer';
+// eslint-disable-next-line
+// import Load from './views/Loader/LoaderContainer';
+// import Choice from './views/Choice/ChoiceContainer';
+// import Lexique from './views/Lexique/LexiqueContainer';
+// eslint-disable-next-line
+// import Test from './views/Test';
 // import Load from './views/Loader/LoaderContainer';
 // import Choice from './views/Choice/ChoiceContainer';
 // import Quizz from './views/Quizz/QuizzContainer';
@@ -48,6 +54,27 @@ class App extends Component {
 
 
     return (
+      // <div>
+      //   {/* <Test /> */}
+      //   <ul>
+      //     {images.map(image =>
+      //       <li key={image.id}>
+      //         <img alt={image.id} src={image.img}></img>
+      //       </li>
+      //     )}
+      //     {contents.map(content =>
+      //       <li key={content.id}>
+      //       <p>{content.title}</p>
+      //       <p>{content.description}</p>
+      //       </li>
+      //     )}
+      //   </ul>
+      // <Load />
+      // <Home />
+      // <Choice />
+      // <Problem/>
+      //   <Lexique />
+      // </div>
       <Router>
           <Fragment>
             <Route exact path="/" component={HomePage} />
