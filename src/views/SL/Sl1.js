@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import '../../assets/style/Al.scss';
+import '../../assets/style/Sl.scss';
 import '../../assets/style/swiper.scss';
 import Swiper from 'react-id-swiper';
 
-// import Lexique from '../LexiqueModal';
-
 import '../../assets/img/1 AL/fond1.jpg';
 
-class Al1 extends Component {
+class Sl1 extends Component {
     constructor(props) {
         super(props)
         this.el = document.querySelector('.modal');
@@ -82,7 +80,7 @@ class Al1 extends Component {
             }
           }
         return (
-            <div id="Al1" className="section grain">
+            <div id="Sl1" className="section grain">
                 <div className="container pt-xl">
                     <div className="row">
                         <div className="col-12 col-md-8 container">
@@ -108,4 +106,4 @@ class Al1 extends Component {
     }
 }
 
-export default Al1;
+export default Sl1;

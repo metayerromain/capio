@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Menu from './Menu/MenuContainer';
+import Lexique from './Lexique/LexiqueContainer';
 
 class IndexPage extends Component {
     constructor(props) {
@@ -12,8 +14,11 @@ class IndexPage extends Component {
     render() {
         return(
             <section id="Lexique">
-                <h1 className="logo">Capio</h1>
+                <Link to={`/`} className="logo">
+                    <h1>Capio</h1>
+                </Link>
                 <Menu />
+                <Lexique />
             </section>
         )
     }

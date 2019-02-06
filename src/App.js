@@ -4,7 +4,7 @@ import './assets/style/Reset.scss';
 import HomePage from './views/homePage';
 import AlPage from './views/alPage';
 import SlPage from './views/slPage';
-import IndexPage from './views/indexPage';
+import LexiquePage from './views/lexiquePage';
 
 //import dependencies
 import 'flexboxgrid'
@@ -75,7 +75,7 @@ class App extends Component {
             <Route exact path="/" component={HomePage} />
             <Route path="/choiceAl" component={AlPage} />
             <Route path="/choiceSl" component={SlPage} />
-            <Route path="/index" component={IndexPage} />
+            <Route path="/index" component={LexiquePage} />
           </Fragment>
         </Router>
 

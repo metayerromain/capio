@@ -24,7 +24,7 @@ class Al3 extends Component {
     render () {
 
         return (
-            // <div id="Al3" class="section">
+            // <div id="Al3" className="section">
             // {contents.map((content) =>
             //     <div className="blockText" key={content.id}>
             //         <p>{content.description}</p>
@@ -35,7 +35,7 @@ class Al3 extends Component {
             //         <img src={image.img}></img>
             //     </div>
             // )}
-            <div id="Al3" class="section grain">
+            <div id="Al3" className="section grain">
                 <div className="container-fluid">
                     <div className="row jc-end">
                         <div className="col-12 col-md-6">

@@ -6,7 +6,7 @@ import Poster from '../../assets/img/poster.png';
 
 const Home = (props) => (
     <section id="home">
-        {/* <Load /> */}
+        <Load />
         
         <button onClick={props.skipVideo} className="buttonSkip">
             <p>Passez la vidéo</p>

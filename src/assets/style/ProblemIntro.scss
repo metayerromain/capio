@@ -1,4 +1,7 @@
 #problemIntro {
+    .fp-tableCell {
+        display: contents !important;
+    }
     .problem {
         display: flex;
         flex-direction: column;
