@@ -25,6 +25,7 @@ class Al2 extends Component {
     render () {
         // const { contents, images } = this.state;
         return (
+
             // <div id="Al2" class="section">
             // {contents.map((content) =>
             //     <div className="blockText" key={content.id}>

@@ -25,7 +25,6 @@ class Al5 extends Component {
     render () {
 
         return (
-
             <div id="Al5" class="section grain">
                 <div className="container">
                     <div className="row pt-xl pt-down-0">

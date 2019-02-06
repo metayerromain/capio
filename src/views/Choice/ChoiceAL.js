@@ -19,7 +19,7 @@ import Al14 from '../AL/Al14';
 
 class ChoiceAL extends Component {
     constructor(props){
-      super(props)
+        super(props)
     }
 
     render(){
