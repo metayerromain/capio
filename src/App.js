@@ -6,17 +6,15 @@ import AlPage from './views/alPage';
 import SlPage from './views/slPage';
 import IndexPage from './views/indexPage';
 
-// import React, { Component } from 'react';
+//import dependencies
+import 'flexboxgrid'
+import "gsap";
 
-// //import dependencies
-// import 'flexboxgrid'
-// import "gsap";
-
-// //import css
-// import './assets/style/fonts.scss';
-// import './assets/style/Reset.scss';
-// import './assets/style/content.scss';
-// import './assets/style/grain.scss';
+//import css
+import './assets/style/fonts.scss';
+import './assets/style/Reset.scss';
+import './assets/style/content.scss';
+import './assets/style/grain.scss';
 
 // //import components
 // import Home from './views/Home/HomeContainer';
@@ -29,9 +27,6 @@ import IndexPage from './views/indexPage';
 // import Load from './views/Loader/LoaderContainer';
 // import Choice from './views/Choice/ChoiceContainer';
 // import Quizz from './views/Quizz/QuizzContainer';
-
-
-// import './App.css';
 
 
 class App extends Component {

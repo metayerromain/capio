@@ -7,6 +7,10 @@
 |
 */
 
+.intro-anim{
+    opacity: 0;
+}
+
 .modal{
     visibility: hidden;
     position: absolute;
@@ -24,6 +28,17 @@ body{
     font-family: 'source_sans_pro';
     font-size: 24px;
     background: #000;
+}
+.logo {
+    position: fixed;
+    z-index: 1000000;
+    color: #fff;
+    left: 0;
+    top: 0;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+
 }
 .anim{
     opacity: 0;
