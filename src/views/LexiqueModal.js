@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-class Lexique extends Component {
+class LexiqueModal extends Component {
     constructor(props){
       super(props)
     }
@@ -25,4 +25,4 @@ class Lexique extends Component {
     }
 }
 
-export default Lexique;
+export default LexiqueModal;

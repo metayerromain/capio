@@ -15,6 +15,7 @@ import './assets/style/grain.scss';
 // eslint-disable-next-line
 import Load from './views/Loader/LoaderContainer';
 import Choice from './views/Choice/ChoiceContainer';
+import Lexique from './views/Lexique/LexiqueContainer';
 // eslint-disable-next-line
 import Test from './views/Test';
 
@@ -82,6 +83,7 @@ class App extends Component {
         <Home />  */}
         <Choice />
         {/* <Problem/> */}
+        <Lexique />
       </div>
     );
   }
