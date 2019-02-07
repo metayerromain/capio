@@ -23,7 +23,8 @@ const Home = (props) => (
             src={props.videoOptions.src}
             poster={Poster}
             type="video/mp4" id="video"
-            onEnded={props.endVideo}>
+            onEnded={props.endVideo}
+            onClick={props.clickVideo}>
         </video>
     </section>
 );

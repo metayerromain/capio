@@ -101,6 +101,7 @@
     background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
     url('../img/SL/sl1_bg.jpg') no-repeat center;
     background-size: cover;
+    z-index: 1000;
 }
 #Sl2 {
     display: block;
@@ -109,6 +110,7 @@
     url('../img/SL/sl1_bg.jpg') no-repeat center;
     background-size: cover;
     position: relative;
+    z-index: 1000;
     .img1 {
         background: url('../img/SL/sl2_first.jpg') no-repeat center;
         background-size: cover;
@@ -132,6 +134,8 @@
     display: block;
     height: 100vh;
     position: relative;
+    z-index: 1000;
+    background-color:#000;
     .img1 {
         background: url('../img/SL/sl3_first.jpg') no-repeat center;
         background-size: cover;
@@ -146,6 +150,7 @@
     url('../img/SL/sl1_bg.jpg') no-repeat center;
     background-size: cover;
     position: relative;
+    z-index: 1000;
     .img1 {
         background-image: url('../img/SL/sl4_first.JPG');
         width: 554px;
