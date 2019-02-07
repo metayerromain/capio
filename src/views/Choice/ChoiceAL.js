@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { TimelineMax, Power3 } from 'gsap';
 import ReactFullpage from "@fullpage/react-fullpage";
+import Sound from 'react-sound';
 
 import Al1 from '../AL/Al1';
 import Al2 from '../AL/Al2';
@@ -49,14 +50,23 @@ class ChoiceAL extends Component {
                         timeline.staggerFromTo(elementToAnim, .5, { autoAlpha: 0, y: 40}, {autoAlpha: 1, y: 0, ease: Power3.easeInOut}, .15, "start");
 
                         timeline.play();
-
+                        
+                        
                         if(state.callback === "onLeave"){
-                            timeline.reverse();
+                            timeline.reverse().delay(2);
                         }
                     }
 
                     return(
                         <section id="fullpage-wrapper">
+                            <Sound
+                            url="ambiance.mp3"
+                            playStatus={Sound.status.PLAYING}
+                            playFromPosition={50000 /* in milliseconds */}
+                            onLoading={this.handleSongLoading}
+                            onPlaying={this.handleSongPlaying}
+                            onFinishedPlaying={this.handleSongFinishedPlaying}
+                            />
                             <Al1 lexique={[{title:'titre1', content:'contenu1'}, {title:'titre2', content:'contenu2'}]}/>
                             <Quizz1 />
                             <Al2 />
