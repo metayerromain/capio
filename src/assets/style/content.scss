@@ -129,13 +129,13 @@ body{
     font-weight: bolder;
     text-decoration: none;
 }
-.alSl {
+.al {
     position: absolute;
     border: initial;
     cursor: pointer;
     background: transparent;
     color: #fff;
-    z-index: 1;
+    z-index: 20000;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -145,19 +145,20 @@ body{
     p{
         text-transform: uppercase;
         margin: auto;
+        font-size: 15px;
     }
     img {
-        width: 25px;
+        width: 15px;
         margin: 20px;
     }
 }
-.slAl {
+.sl {
     position: absolute;
     border: initial;
     cursor: pointer;
     background: transparent;
     color: #fff;
-    z-index: 1;
+    z-index: 200000;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -168,9 +169,10 @@ body{
     p{
         text-transform: uppercase;
         margin: auto;
+        font-size: 15px;
     }
     img {
-        width: 25px;
+        width: 15px;
         margin: 20px;
     }
 }
@@ -180,7 +182,7 @@ body{
     cursor: pointer;
     background: transparent;
     color: #fff;
-    z-index: 1;
+    z-index: 200000;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -190,9 +192,10 @@ body{
     p{
         text-transform: uppercase;
         margin: auto;
+        font-size: 15px;
     }
     img {
-        width: 25px;
+        width: 15px;
         margin: 20px;
     }
 }

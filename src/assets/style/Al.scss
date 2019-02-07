@@ -101,6 +101,7 @@
     background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
     url('../img/1\ AL/fond1.jpg') no-repeat center;
     background-size: cover;
+    z-index: 1000;
 }
 #Al2 {
     display: block;
@@ -109,6 +110,7 @@
     url('../img/2\ AL/fond2.jpg') no-repeat center;
     background-size: cover;
     position: relative;
+    z-index: 1000;
     .img1 {
         background: url('../img/2\ AL/cascade1.jpg') no-repeat center;
         background-size: cover;
@@ -132,6 +134,8 @@
     display: block;
     height: 100vh;
     position: relative;
+    background-color:#000;
+    z-index: 1000;
     .img1 {
         background: url('../img/3\ AL/wapiti1.jpg') no-repeat center;
         background-size: cover;
@@ -146,6 +150,7 @@
     url('../img/4\ AL/fond3.jpg') no-repeat center;
     background-size: cover;
     position: relative;
+    z-index: 1000;
     .img1 {
         background-image: url('../img/4\ AL/loup2.png');
         width: 554px;
@@ -171,6 +176,7 @@
     url('../img/5\ AL/fond4.jpg') no-repeat center;
     background-size: cover;
     position: relative;
+    z-index: 1000;
     .img1 {
         background-image: url('../img/5\ AL/barrage1.png');
         width: 960px;
@@ -188,6 +194,7 @@
     url('../img/6\ AL/fond5.jpg') no-repeat center;
     background-size: cover;
     position: relative;
+    z-index: 1000;
     .img1 {
         background-image: url('../img/6\ AL/paysage3.jpg');
         width: 458px;
@@ -205,6 +212,7 @@
     url('../img/7\ AL/fond5.jpg') no-repeat center;
     background-size: cover;
     position: relative;
+    z-index: 1000;
     .img1 {
         background-image: url('../img/7\ AL/castor1.jpg');
         width: 449px;
@@ -219,6 +227,7 @@
     url('../img/8\ AL/fond6.jpg') no-repeat center;
     background-size: cover;
     position: relative;
+    z-index: 1000;
     .img1 {
         background-image: url('../img/8\ AL/loutre1.jpg');
         width: 436px;
@@ -252,6 +261,7 @@
     url('../img/9\ AL/fond7.jpg') no-repeat center;
     background-size: cover;
     position: relative;
+    z-index: 1000;
     .img1 {
         background: url('../img/9\ AL/paysage4.jpeg') no-repeat center;
         background-size: cover;
@@ -270,6 +280,7 @@
     url('../img/10\ AL/fond7.jpg') no-repeat center;
     background-size: cover;
     position: relative;
+    z-index: 1000;
     .img1 {
         background: url('../img/10\ AL/aigle1.jpg') no-repeat center;
         background-size: cover;
@@ -306,6 +317,7 @@
     url('../img/11\ AL/fond7.jpg') no-repeat center;
     background-size: cover;
     position: relative;
+    z-index: 1000;
     .img1 {
         background: url('../img/11\ AL/loup3.jpg') no-repeat center;
         background-size: cover;
@@ -321,6 +333,8 @@
     height: 100vh;
     width: 100%;
     position: relative;
+    background-color:#000;
+    z-index: 1000;
     .img1 {
         background: url('../img/12\ AL/Ours2.jpg') no-repeat center;
         background-size: cover;
@@ -335,6 +349,7 @@
     url('../img/13\ AL/fond7.jpg') no-repeat center;
     background-size: cover;
     position: relative;
+    z-index: 1000;
     .img1 {
         background: url('../img/13\ AL/paysage5.jpg') no-repeat center;
         background-size: cover;
@@ -351,6 +366,7 @@
     url('../img/14\ AL/fond8.jpg') no-repeat center;
     background-size: cover;
     position: relative;
+    z-index: -2;
     .img1 {
         background: url('../img/14\ AL/affiche1.jpg') no-repeat center;
         background-size: cover;
@@ -371,3 +387,43 @@
     }
 }
 /** LES ALS +*/
+
+#Quizz1 {
+    background-color: #000;
+}
+#Quizz2 {
+    background-color: #000;
+}
+#Quizz3 {
+    background-color: #000;
+}
+#Quizz4 {
+    background-color: #000;
+}
+#Quizz5 {
+    background-color: #000;
+}
+#Quizz6 {
+    background-color: #000;
+}
+#Quizz7 {
+    background-color: #000;
+}
+#Quizz8 {
+    background-color: #000;
+}
+#Quizz9 {
+    background-color: #000;
+}
+#Quizz10 {
+    background-color: #000;
+}
+#Quizz11 {
+    background-color: #000;
+}
+#Quizz12 {
+    background-color: #000;
+}
+#Quizz13 {
+    background-color: #000;
+}

@@ -8,7 +8,12 @@ import Sl4 from '../SL/Sl4';
 import Sl5 from '../SL/Sl5';
 
 class ChoiceSL extends Component {
-
+    constructor(props){
+        super(props);
+        this.state={
+            conclu: "sl"
+        }
+    }
     render(){
         const FullpageWrapper = fullpageProps => (
         <ReactFullpage
@@ -38,7 +43,7 @@ class ChoiceSL extends Component {
                             <Sl2 />
                             <Sl3 />
                             <Sl4 />
-                            <Sl5 />
+                            <Sl5 conclu={this.state.conclu}/>
                         </section>
                     )
                 }}
