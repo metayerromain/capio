@@ -11,6 +11,10 @@ class Al1 extends Component {
     constructor(props) {
         super(props)
         this.el = document.querySelector('.modal');
+        this.state={
+            contents: [],
+            images: []
+        }
     }
 
     displayModal = ( event )=>
@@ -44,7 +48,7 @@ class Al1 extends Component {
 
     render () {
         // console.log('before render', contents);
-        // const { contents, images } = this.state;
+        const { contents, images } = this.state;
         // console.log('after state', contents);
 
 
@@ -86,8 +90,8 @@ class Al1 extends Component {
                 <div className="container pt-xl">
                     <div className="row">
                         <div className="col-12 col-md-8 container">
-                            <div className="blockText animText">
-                                Nous savons <span data-id="0" className="lexique-word" onMouseEnter={ this.displayModal } onMouseLeave={ this.hideModal }>tous</span> que les loups tuent différentes espèces d’animaux mais nous <span data-id="1" className="lexique-word" onMouseEnter={ this.displayModal } onMouseLeave={ this.hideModal  }>sommes</span> moins au courant qu’ils ont donné la vie à beaucoup d’autres !
+                            <div className="blockText animText" key={contents.id}>
+                                {contents.description} <span data-id="0" className="lexique-word" onMouseEnter={ this.displayModal } onMouseLeave={ this.hideModal }>tous</span> que les loups tuent différentes espèces d’animaux mais nous <span data-id="1" className="lexique-word" onMouseEnter={ this.displayModal } onMouseLeave={ this.hideModal  }>sommes</span> moins au courant qu’ils ont donné la vie à beaucoup d’autres !
                             </div>
                         </div>
                     </div>
