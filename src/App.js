@@ -60,12 +60,7 @@ class App extends Component {
       //   </ul>
       // </div>
       <Fragment>
-      {/* <Lexique /> */}
-        {/* {/* <Load />
-        <Home /> */}
-        {/* <Choice /> */}
-      {/* <Problem/> */}
-      <Router>
+        <Router>
           <Fragment>
             <Route exact path="/" component={HomePage} />
             <Route path="/choiceAl" component={AlPage} />
