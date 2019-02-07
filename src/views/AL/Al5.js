@@ -30,7 +30,7 @@ class Al5 extends Component {
                 <div className="container">
                     <div className="row pt-xl pt-down-0">
                         <div className="col-md-5 zIndex-5">
-                            <div className="blockText anim mt-half blockText-down-center mt-down-0">
+                            <div className="blockText anim blockText-down-center mt-down-0">
                             {contents[4] && contents[4].description}
                             </div>
                         </div>

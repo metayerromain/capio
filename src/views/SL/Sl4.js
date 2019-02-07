@@ -18,7 +18,7 @@ class Sl4 extends Component {
                 <div className="container">
                     <div className="row pt-xl pt-down-0 jc-end">
                         <div className="col-md-5 zIndex-5">
-                            <div className="blockText anim mt-half blockText-down-center mt-down-0">
+                            <div className="blockText anim blockText-down-center mt-down-0">
                             En l’espace de quelques années, le wapiti avait remplacé le loup comme exemple de souci écologique du Yellowstone, mais il a fallu plusieurs années pour que l’idée d’une réintroduction du loup dans le parc fasse l’unanimité parmi les acteurs de la communauté locale.                            </div>
                         </div>
                     </div>
