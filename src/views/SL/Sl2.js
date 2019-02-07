@@ -6,43 +6,13 @@ class Sl2 extends Component {
         super(props)
 
         this.state = {
-            contents: [],
-            images: []
+         
         }
     }
-    componentDidMount() {
-        fetch('http://localhost:8888/capio/api/content/read.php')
-        .then(response => response.json())
-        .then(data => this.setState({ contents: data.contents }));
-
-        fetch('http://localhost:8888/capio/api/images/read.php')
-        .then(response => response.json())
-        .then(data => this.setState({ images: data.images }));
-  
-    }
-
     
     render () {
         // const { contents, images } = this.state;
         return (
-
-            // <div id="Al2" className="section">
-            // {contents.map((content) =>
-            //     <div className="blockText" key={content.id}>
-            //         <p>{content.description}</p>
-            //     </div>
-            // )}
-            // {contents.map((content) =>
-            //     <div className="blockText2" key={content.id}>
-            //         <p>{content.description}</p>
-            //     </div>
-            // )}
-            // {images.map((image) =>
-            //     <div key={image.id} className="img1">
-            //         <img src={image.img}></img>
-            //     </div>
-            // )}
-            //     <div className="img2"></div>
 
             <div id="Sl2" className="section grain">
                 <div className="container">
