@@ -50,7 +50,7 @@ function create(){
     // sanitize
     $this->id=htmlspecialchars(strip_tags($this->id));
     $this->title=htmlspecialchars(strip_tags($this->title));
-    $this->description=htmlspecialchars(strip_tags($this->description));
+    $this->description=base64_encode(strip_tags($this->description));
     
     // bind values
     $stmt->bindParam(":id", $this->id);

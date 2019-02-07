@@ -6,35 +6,15 @@ class Al3 extends Component {
         super(props)
 
         this.state = {
-            contents: [],
-            images: []
+            
         }
     }
-    componentDidMount() {
-        fetch('http://localhost:8888/capio/api/content/read.php')
-        .then(response => response.json())
-        .then(data => this.setState({ contents: data.contents }));
 
-        fetch('http://localhost:8888/capio/api/images/read.php')
-        .then(response => response.json())
-        .then(data => this.setState({ images: data.images }));
-  
-    }
 
     render () {
 
         return (
-            // <div id="Al3" className="section">
-            // {contents.map((content) =>
-            //     <div className="blockText" key={content.id}>
-            //         <p>{content.description}</p>
-            //     </div>
-            // )}
-            // {images.map((image) =>
-            //     <div className="img1" key={image.id}>
-            //         <img src={image.img}></img>
-            //     </div>
-            // )}
+
             <div id="Al3" className="section grain">
                 <div className="container-fluid">
                     <div className="row jc-end">
@@ -44,7 +24,7 @@ class Al3 extends Component {
                     </div>
                 </div>
                 <div className="blockText middle-block animText">
-                    Nous savons tous que les loups tuent différentes espèces d’animaux mais nous sommes moins au courant qu’ils ont donné la vie à beaucoup d’autres !
+                    Puisqu'ils sont des prédateurs qui chassent principalement des ongulés malades et vieillissants - particulièrement les <span data-id="0" className="lexique-word" onMouseEnter={ this.displayModal } onMouseLeave={ this.hideModal }>wapitis </span>, dont les populations ont explosé à Yellowstone - les loups ont arrêté l'expansion de ces populations d'herbivores tout en améliorant leur santé globale.
                 </div>
             </div>
         )
