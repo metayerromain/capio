@@ -1,6 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import LexiqueModal from './LexiqueModal'
 import '../../assets/style/Lexique.scss';
+import { TweenLite, TimelineMax, Linear, Back, Sine, Power3 } from 'gsap';
+import Loader from '../Loader/Loader';
+
 
 class LexiqueContainer extends Component {
 
@@ -8,6 +11,7 @@ class LexiqueContainer extends Component {
     super(props)
     this.state = {
       show: false,
+      toggle: true,
       lexique: null
     };
     this.datas = [{
@@ -43,39 +47,97 @@ class LexiqueContainer extends Component {
     ];
   }
 
+  // const showBox = new TimelineMax();
+  // //alias for brevity
+  // const sb = showBox;
+
+  // const hb = new TimelineMax(); //hidebox
+
+
   showModal = (event, id) => {
     this.setState({ show: true, lexique : this.datas[ id ] });
+
   };
+
+  onFirstPage = () => {
+    this.setState({toggle: true});
+  };
+  
+  outFirstPage = () => {
+    this.setState({toggle: false});
+  }
 
   hideModal = () => {
     this.setState({ show: false });
   };
 
+  componentDidMount() {
+    var elementToAnim = document.querySelectorAll('.intro-anim');
+    console.log(elementToAnim)
+    elementToAnim.forEach((element, i) => {
+      var tl = new TimelineMax({
+        delay: i * 7
+      });
+      // tl.fromTo(advanced, 6.6, {scaleX: 0}, {scaleX: 1, transformOrigin:"left", ease: Power3.easeInOut}, 'start')
+      tl.to(element, 1, {
+        autoAlpha: 1,
+        ease: Power3.easeInOut
+      }, 'start')
+    });
+  }
+
   render() {
     return (
-      <div>
-        <div className="map"></div>
-        <div className="lexique-container">
-          {
-            this.state.show ?
-            <Fragment>
-              <div className="bg-black"></div>
-              <LexiqueModal
-                lexique = { this.state.lexique }
-              />
-              <div onClick={() => this.hideModal()} className="close"></div>
-            </Fragment> : ''
-          }
+      <Fragment>
+        { this.state.toggle ? 
+        <div>
+          <div className="bg-black">
+            <div className="intro1 section text-center grain">
+              <div className="blockText intro-anim">
+                <p>
+                  Vous avez la possibilité de re-découvrir les definitions de certains termes
+                  ou encore les anecedotes que vous avez rencontré au cours de cette experience
+                  par le biais d'une carte.
+                </p>
+                <button 
+                  className="button-discover"
+                  onClick={() => this.outFirstPage()}
+                >
+                  Decouvrir le lexique
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-
-        }
-        <div id="icon1" data-id="0" onClick={() => this.showModal(null, 0)} className="lexique-icon"></div>
-        <div id="icon2" data-id="1" onClick={() => this.showModal(null, 1)} className="lexique-icon"></div>
-        <div id="icon3" data-id="2" onClick={() => this.showModal(null, 2)} className="lexique-icon"></div>
-        <div id="icon4" data-id="3" onClick={() => this.showModal(null, 3)} className="lexique-icon"></div>
-        <div id="icon5" data-id="4" onClick={() => this.showModal(null, 4)} className="lexique-icon"></div>
-        <div id="icon6" data-id="5" onClick={() => this.showModal(null, 5)} className="lexique-icon"></div>
-      </div>
+       : '' }
+       {
+         !this.state.toggle ? 
+        <div>
+          {
+            !this.state.toggle ? <div className="map"></div> : ''
+          }
+          <div className="lexique-container">
+            {
+              this.state.show ?
+              <Fragment>
+                <div className="bg-black-opacity"></div>
+                <LexiqueModal
+                  lexique = { this.state.lexique }
+                />
+                <div onClick={() => this.hideModal()} className="close"></div>
+              </Fragment> : ''
+            }
+          </div>
+            <div id="icon1" data-id="0" onClick={() => this.showModal(null, 0)} className="lexique-icon"></div>
+            <div id="icon2" data-id="1" onClick={() => this.showModal(null, 1)} className="lexique-icon"></div>
+            <div id="icon3" data-id="2" onClick={() => this.showModal(null, 2)} className="lexique-icon"></div>
+            <div id="icon4" data-id="3" onClick={() => this.showModal(null, 3)} className="lexique-icon"></div>
+            <div id="icon5" data-id="4" onClick={() => this.showModal(null, 4)} className="lexique-icon"></div>
+            <div id="icon6" data-id="5" onClick={() => this.showModal(null, 5)} className="lexique-icon"></div>
+          </div>
+         : ''
+       }
+      </Fragment>
     );
   }
 }
