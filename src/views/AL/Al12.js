@@ -4,13 +4,30 @@ import '../../assets/style/Al.scss';
 class Al12 extends Component {
     constructor(props) {
         super(props)
+        this.el = document.querySelector('.modal');
 
         this.state = {
             
         }
     }
 
+    displayModal = ( event )=>
+    {   
+        var indexEl = event.target.getAttribute('data-id');
+        var el = this.el;
+        el.style.top = event.pageY +"px";
+        el.style.left = event.pageX  +"px";
+        el.style.visibility = "visible";
+        el.innerHTML = "<div class='modal-title'>"+this.props.lexique[indexEl].title +"</div>" + "<div class='modal-content'>"+this.props.lexique[indexEl].content+"</div>";
+    }
 
+    hideModal = ( event ) =>
+    {
+        this.el.style.visibility = "hidden";
+        this.setState = {
+            contents: []
+        }
+    }
     render () {
 
         return (
