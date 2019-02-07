@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../../assets/style/Al.scss';
+import Skip from '../../assets/Picto/right-arrow-3.svg';
+import { Link } from 'react-router-dom';
 
 class Al14 extends Component {
     constructor(props) {
@@ -22,9 +24,7 @@ class Al14 extends Component {
     }
 
     render () {
-
-        return (
-
+            return(
             <div id="Al14" className="section grain">
                 <div className="container">
                     <div className="row pt-xl pt-down-0">
@@ -46,8 +46,12 @@ class Al14 extends Component {
                 </div>
                 <div className="img1 img-h-2 zIndex-2 mt-down-md img anim d-down-none"></div>
                 <div className="img2 img-h-2 zIndex-3 mt-down-md img anim d-down-none"></div>
+                <Link to={`/conclusion`} className="Conclusion">
+                    <p>Conclusion</p>
+                    <img src={Skip} alt="Skip"></img>
+                </Link>
             </div>
-        )
+            )
     }
 }
 

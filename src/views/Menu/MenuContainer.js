@@ -40,9 +40,9 @@ class MenuContainer extends Component {
                 <div id="myNav" className="overlay" style={myNavStyle}>
                     <span className="closebtn" onClick={() => this.closeNav()}>&times;</span>
                     <div className="overlay-content">
-                        <Link to={`/choiceAl`} className="link anim-menu">Chapitre 1 : Yellowstone sans les loups</Link>
+                        <Link to={`/choiceSl`} className="link anim-menu">Chapitre 1 : Yellowstone sans les loups</Link>
                         <span className="ligne1 anim-menu"></span>
-                        <Link to={`/choiceSl`} className="link anim-menu">Chapitre 2 : Yellowstone avec les loups</Link>
+                        <Link to={`/choiceAl`} className="link anim-menu">Chapitre 2 : Yellowstone avec les loups</Link>
                         <span className="ligne2 anim-menu"></span>
                         <Link to={`/index`} className="link anim-menu">Lexique</Link>
                     </div>

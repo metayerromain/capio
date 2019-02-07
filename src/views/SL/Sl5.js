@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../../assets/style/Sl.scss';
+import Skip from '../../assets/Picto/right-arrow-3.svg';
+import { Link } from 'react-router-dom';
 
 class Sl5 extends Component {
     constructor(props) {
@@ -36,6 +38,10 @@ class Sl5 extends Component {
                     </div>
                 </div>
                 <div className="img1 img-h-1 zIndex-2 mt-down-md img anim d-down-none"></div>
+                <Link to={`/choiceAl`} className="al">
+                    <p>Passez au chapitre 2</p>
+                    <img src={Skip} alt="Skip"></img>
+                </Link>
             </div>
         )
     }

@@ -31,7 +31,12 @@ import Quizz12 from '../AL/Quizz12';
 import Quizz13 from '../AL/Quizz13';
 
 class ChoiceAL extends Component {
-
+    constructor(props){
+        super(props);
+        this.state={
+            conclu: "al"
+        }
+    }
     render(){
         const FullpageWrapper = fullpageProps => (
         <ReactFullpage
@@ -39,7 +44,6 @@ class ChoiceAL extends Component {
             callbacks= {["afterLoad", "onLeave"]}
             parallax={true}
                 render={({ state, props }) => {
-                    
                     if(state.initialized){
                         var elementToAnim = document.querySelectorAll('.active .anim');
                         var textToAnim = document.querySelectorAll('.active .animText');
@@ -83,7 +87,7 @@ class ChoiceAL extends Component {
                             <Al13 />
                             <Quizz12 />
                             <Quizz13 />
-                            <Al14 />
+                            <Al14 conclu={this.state.conclu}/>
                         </section>
                     )
                 }}
