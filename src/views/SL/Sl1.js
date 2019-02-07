@@ -56,8 +56,7 @@ class Sl1 extends Component {
                     <div className="row">
                         <div className="col-12 col-md-8 container">
                             <div className="blockText animText">
-                                Nous savons <span data-id="0" className="lexique-word" onMouseEnter={ this.displayModal } onMouseLeave={ this.hideModal }>tous</span> que les loups tuent différentes espèces d’animaux mais nous <span data-id="1" className="lexique-word" onMouseEnter={ this.displayModal } onMouseLeave={ this.hideModal  }>sommes</span> moins au courant qu’ils ont donné la vie à beaucoup d’autres !
-                            </div>
+                            Les loups ont été autrefois le principal prédateur dans le célèbre parc national de Yellowstone. Mais la population a été éradiquée dans les années 1920, laissant le désert sans loup pendant sept décennies.                            </div>
                         </div>
                     </div>
                 </div>
