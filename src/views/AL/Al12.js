@@ -6,20 +6,10 @@ class Al12 extends Component {
         super(props)
 
         this.state = {
-            contents: [],
-            images: []
+            
         }
     }
-    componentDidMount() {
-        fetch('http://localhost:8888/capio/api/content/read.php')
-        .then(response => response.json())
-        .then(data => this.setState({ contents: data.contents }));
 
-        fetch('http://localhost:8888/capio/api/images/read.php')
-        .then(response => response.json())
-        .then(data => this.setState({ images: data.images }));
-  
-    }
 
     render () {
 
@@ -33,7 +23,7 @@ class Al12 extends Component {
                     </div>
                 </div>
                 <div className="blockText middle-block animText">
-                    Nous savons tous que les loups tuent différentes espèces d’animaux mais nous sommes moins au courant qu’ils ont donné la vie à beaucoup d’autres !
+                    La population des <span data-id="0" className="lexique-word" onMouseEnter={ this.displayModal } onMouseLeave={ this.hideModal }>ours </span> a commencé à augmenter en raison de l’augmentation des baies sur les nouveaux arbustes. Les ours ont accentué la pression des loups en tuant quelques faons.
                 </div>
             </div>
         )

@@ -23,6 +23,7 @@ class Al5 extends Component {
 
 
     render () {
+        const { contents } = this.state;
 
         return (
             <div id="Al5" className="section grain">
@@ -30,7 +31,7 @@ class Al5 extends Component {
                     <div className="row pt-xl pt-down-0">
                         <div className="col-md-5 zIndex-5">
                             <div className="blockText anim mt-half blockText-down-center mt-down-0">
-                                Nous savons tous que les loups tuent différentes espèces d’animaux mais nous sommes moins au courant qu’ils ont donné la vie à beaucoup d’autres !                           
+                            {contents[4] && contents[4].description}
                             </div>
                         </div>
                     </div>
