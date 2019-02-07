@@ -12,7 +12,7 @@ class Al2 extends Component {
         }
     }
     componentDidMount() {
-        fetch('http://localhost:8888/capio/api/content/read.php')
+        fetch('http://capio.local:8888/api/content/read.php')
         .then(response => response.json())
         .then(data => this.setState({ contents: data.contents }));
 
