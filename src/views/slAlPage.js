@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import Skip from '../assets/Picto/right-arrow-3.svg';
 import { Link } from 'react-router-dom';
 import Menu from './Menu/MenuContainer';
-import Sl from './Choice/ChoiceSL';
+import Al from './Choice/ChoiceAL';
 
-class SlPage extends Component {
+
+class SlAlPage extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -19,14 +20,15 @@ class SlPage extends Component {
                     <h1>Capio</h1>
                 </Link>
                 <Menu />
-                <Sl />
-                <Link to={`/choiceSlAl`} className="slAl">
-                    <p>Passez au chapitre 1</p>
+                <Al />
+                <Link to={`/conclusion`} className="Conclusion">
+                    <p>Conclusion</p>
                     <img src={Skip} alt="Skip"></img>
                 </Link>
             </section>
         )
+        
     }
 }
 
-export default SlPage;
+export default SlAlPage;

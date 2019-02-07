@@ -1,73 +1,31 @@
 import React, { Component } from 'react';
+import Skip from '../assets/Picto/right-arrow-3.svg';
 import { Link } from 'react-router-dom';
 import Menu from './Menu/MenuContainer';
 import Al from './Choice/ChoiceAL';
-import Sl from './Choice/ChoiceSL';
-import Conclusion from './Conclusion/ConclusionContainer';
 
 class AlPage extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            Al: true,
-            Sl: false,
-            Conclusion: false,
+
         }
-    }
-
-    showSl = () => {
-        this.setState({
-            Al: false,
-            Sl: true,
-            Conclusion: false,
-        })
-    }
-
-    showCon = () => {
-        this.setState({
-            Al: false,
-            Sl: false,
-            Conclusion: true,
-        })
     }
 
     render() {
-        if(this.state.Al) {
-            return(
-                <section id="alPage">
-                    <Link to={`/`} className="logo">
-                        <h1>Capio</h1>
-                    </Link>
-                    <Menu />
-                    <Al
-                        showSl = {this.showSl}
-                    />
-                </section>
-            )
-        } else if(this.state.Sl) {
-            return(
-                <section id="alPage">
-                    <Link to={`/`} className="logo">
-                        <h1>Capio</h1>
-                    </Link>
-                    <Menu />
-                    <Sl
-                        showCon = {this.showCon}
-                    />
-                </section>
-            )
-        } else if(this.state.Conclusion) {
-            return(
-                <section id="alPage">
-                    <Link to={`/`} className="logo">
-                        <h1>Capio</h1>
-                    </Link>
-                    <Menu />
-                    <Conclusion />
-                </section>
-            )
-        }
-        
+        return(
+            <section id="alPage">
+                <Link to={`/`} className="logo">
+                    <h1>Capio</h1>
+                </Link>
+                <Menu />
+                <Al />
+                <Link to={`/choiceAlSl`} className="alSl">
+                    <p>Passez au chapitre 2</p>
+                    <img src={Skip} alt="Skip"></img>
+                </Link>
+            </section>
+        )
     }
 }
 
