@@ -13,11 +13,11 @@ class Choice extends Component {
     render() {
         return(
             <section id="choices" className="section">
-                <Link to={`/choiceAl`} className="buttonAl">
-                    <p>Yellowtone <br /> avec les loups</p>
-                </Link>
                 <Link to={`/choiceSl`} className="buttonSl">
                     <p>Yellowtone <br /> sans les loups</p>
+                </Link>
+                <Link to={`/choiceAl`} className="buttonAl">
+                    <p>Yellowtone <br /> avec les loups</p>
                 </Link>
             </section>
         )
