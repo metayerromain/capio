@@ -1,4 +1,7 @@
 #problemIntro {
+    .fp-tableCell {
+        display: contents !important;
+    }
     .problem {
         display: flex;
         flex-direction: column;
@@ -17,11 +20,13 @@
             margin: auto;
         }
         .infoScroll {
-            font-size: 20px;
+            font-size: 17px;
             margin: 25px auto;
+            font-style: italic;
         }
         img {
             margin-bottom: 25px;
+            height: 45px;
         }
     }
     .intro1 {

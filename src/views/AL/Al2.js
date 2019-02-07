@@ -26,7 +26,7 @@ class Al2 extends Component {
         // const { contents, images } = this.state;
         return (
 
-            // <div id="Al2" class="section">
+            // <div id="Al2" className="section">
             // {contents.map((content) =>
             //     <div className="blockText" key={content.id}>
             //         <p>{content.description}</p>
@@ -44,7 +44,7 @@ class Al2 extends Component {
             // )}
             //     <div className="img2"></div>
 
-            <div id="Al2" class="section grain">
+            <div id="Al2" className="section grain">
                 <div className="container">
                     <div className="row pt-xl pt-down-0">
                         <div className="col-md-5 zIndex-5">

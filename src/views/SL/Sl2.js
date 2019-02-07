@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../../assets/style/Al.scss';
+import '../../assets/style/Sl.scss';
 
-class Al14 extends Component {
+class Sl2 extends Component {
     constructor(props) {
         super(props)
 
@@ -21,14 +21,33 @@ class Al14 extends Component {
   
     }
 
+    
     render () {
-
+        // const { contents, images } = this.state;
         return (
 
-            <div id="Al14" className="section grain">
+            // <div id="Al2" className="section">
+            // {contents.map((content) =>
+            //     <div className="blockText" key={content.id}>
+            //         <p>{content.description}</p>
+            //     </div>
+            // )}
+            // {contents.map((content) =>
+            //     <div className="blockText2" key={content.id}>
+            //         <p>{content.description}</p>
+            //     </div>
+            // )}
+            // {images.map((image) =>
+            //     <div key={image.id} className="img1">
+            //         <img src={image.img}></img>
+            //     </div>
+            // )}
+            //     <div className="img2"></div>
+
+            <div id="Sl2" className="section grain">
                 <div className="container">
                     <div className="row pt-xl pt-down-0">
-                        <div className="col-md-12 zIndex-5">
+                        <div className="col-md-5 zIndex-5">
                             <div className="blockText anim blockText-resp-middle h-50">
                                 Les loups sont des prédateurs de premier plan qui ont des effets bénéfiques de grande envergure sur des écosystèmes entiers - y compris la structure des rivières.
                             </div>
@@ -51,4 +70,4 @@ class Al14 extends Component {
     }
 }
 
-export default Al14;
+export default Sl2;

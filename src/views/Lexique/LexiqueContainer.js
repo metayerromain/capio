@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react';
-// import Lexique from './Lexique';
-import LexiqueModal from '../LexiqueModal'
+import LexiqueModal from './LexiqueModal'
 import '../../assets/style/Lexique.scss';
 
 class LexiqueContainer extends Component {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../../assets/style/Al.scss';
+import '../../assets/style/Sl.scss';
 
-class Al12 extends Component {
+class Sl3 extends Component {
     constructor(props) {
         super(props)
 
@@ -24,9 +24,20 @@ class Al12 extends Component {
     render () {
 
         return (
-            <div id="Al12" className="section grain">
+            // <div id="Al3" className="section">
+            // {contents.map((content) =>
+            //     <div className="blockText" key={content.id}>
+            //         <p>{content.description}</p>
+            //     </div>
+            // )}
+            // {images.map((image) =>
+            //     <div className="img1" key={image.id}>
+            //         <img src={image.img}></img>
+            //     </div>
+            // )}
+            <div id="Sl3" className="section grain">
                 <div className="container-fluid">
-                    <div className="row">
+                    <div className="row jc-end">
                         <div className="col-12 col-md-6">
                             <div className="img1 img img-h-1 anim"></div>
                         </div>
@@ -40,4 +51,4 @@ class Al12 extends Component {
     }
 }
 
-export default Al12;
+export default Sl3;

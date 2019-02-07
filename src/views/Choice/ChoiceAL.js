@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import { TweenLite, TimelineMax, Power3 } from 'gsap';
+import { TimelineMax, Power3 } from 'gsap';
 import ReactFullpage from "@fullpage/react-fullpage";
 import Al1 from '../AL/Al1';
 import Al2 from '../AL/Al2';
@@ -18,9 +17,6 @@ import Al13 from '../AL/Al13';
 import Al14 from '../AL/Al14';
 
 class ChoiceAL extends Component {
-    constructor(props){
-        super(props)
-    }
 
     render(){
         const FullpageWrapper = fullpageProps => (

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import Menu from './Menu/MenuContainer';
 import Home from '../views/Home/HomeContainer';
 import ProblemIntro from '../views/Problem/problem';
 
@@ -6,8 +8,8 @@ class HomePage extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            home: false,
-            problem: true,
+            home: true,
+            problem: false,
         }
     }
 
@@ -38,7 +40,10 @@ class HomePage extends Component {
         } else if (this.state.problem) {
             return(
                 <div id="HomePage">
-                    <h1 className="logo">Capio</h1>
+                    <Link to={`/`} className="logo">
+                        <h1>Capio</h1>
+                    </Link>
+                    <Menu />
                     <ProblemIntro />
                 </div>
             )

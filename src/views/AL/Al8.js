@@ -24,7 +24,7 @@ class Al8 extends Component {
 
         return (
 
-            <div id="Al8" class="section grain">
+            <div id="Al8" className="section grain">
                 <div className="blockText middle-block animText blockText-down-center">
                     Nous savons tous que les loups tuent différentes espèces d’animaux mais nous sommes moins au courant qu’ils ont donné la vie à beaucoup d’autres !
                 </div>

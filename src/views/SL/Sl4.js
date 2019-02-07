@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../../assets/style/Al.scss';
+import '../../assets/style/Sl.scss';
 
-class Al4 extends Component {
+class Sl4 extends Component {
     constructor(props) {
         super(props)
 
@@ -15,7 +15,7 @@ class Al4 extends Component {
     render () {
 
         return (
-            <div id="Al4" className="section grain">
+            <div id="Sl4" className="section grain">
                 <div className="container">
                     <div className="row pt-xl pt-down-0 jc-end">
                         <div className="col-md-5 zIndex-5">
@@ -32,4 +32,4 @@ class Al4 extends Component {
     }
 }
 
-export default Al4;
+export default Sl4;

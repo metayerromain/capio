@@ -3,29 +3,25 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import HomePage from './views/homePage';
 import AlPage from './views/alPage';
 import SlPage from './views/slPage';
-import IndexPage from './views/indexPage';
+import LexiquePage from './views/lexiquePage';
 
-
-// //import dependencies
+//import dependencies
 import 'flexboxgrid'
 import "gsap";
 
-// //import css
+//import css
 import './assets/style/fonts.scss';
 import './assets/style/Reset.scss';
 import './assets/style/content.scss';
 import './assets/style/grain.scss';
-import './App.css';
 
 // //import components
 // import Home from './views/Home/HomeContainer';
 // import Load from './views/Loader/LoaderContainer';
-import Choice from './views/Choice/ChoiceContainer';
+// import Choice from './views/Choice/ChoiceContainer';
 // import Lexique from './views/Lexique/LexiqueContainer';
 // import Quizz from './views/Quizz/QuizzContainer';
 // import Test from './views/Test';
-
-
 
 
 class App extends Component {
@@ -67,12 +63,12 @@ class App extends Component {
         {/* <Choice /> */}
       {/* <Problem/> */}
       <Router>
-        <Fragment>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/choiceAl" component={AlPage} />
-          <Route path="/choiceSl" component={SlPage} />
-          <Route path="/index" component={IndexPage} />
-        </Fragment>
+          <Fragment>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/choiceAl" component={AlPage} />
+            <Route path="/choiceSl" component={SlPage} />
+            <Route path="/index" component={LexiquePage} />
+          </Fragment>
         </Router>
       </Fragment>
     );

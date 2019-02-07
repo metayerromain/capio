@@ -23,7 +23,7 @@ class Al11 extends Component {
     render () {
 
         return (
-            <div id="Al11" class="section grain">
+            <div id="Al11" className="section grain">
                 <div className="container">
                     <div className="row pt-xl pt-down-md">
                         <div className="col-md-5 zIndex-5">

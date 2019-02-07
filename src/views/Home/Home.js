@@ -23,7 +23,6 @@ const Home = (props) => (
             src={props.videoOptions.src}
             poster={Poster}
             type="video/mp4" id="video"
-            className="anim"
             onEnded={props.endVideo}>
         </video>
     </section>
