@@ -16,6 +16,7 @@ import './assets/style/Reset.scss';
 import './assets/style/content.scss';
 import './assets/style/grain.scss';
 
+
 // //import components
 // import Home from './views/Home/HomeContainer';
 // import Load from './views/Loader/LoaderContainer';

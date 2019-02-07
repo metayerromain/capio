@@ -63,15 +63,7 @@ class ChoiceAL extends Component {
 
                     return(
                         <section id="fullpage-wrapper">
-                            <Sound
-                            url="ambiance.mp3"
-                            playStatus={Sound.status.PLAYING}
-                            playFromPosition={50000 /* in milliseconds */}
-                            onLoading={this.handleSongLoading}
-                            onPlaying={this.handleSongPlaying}
-                            onFinishedPlaying={this.handleSongFinishedPlaying}
-                            />
-                            <Al1 />
+                            <Al1 lexique={[{title:'titre1', content:'contenu1'}, {title:'titre2', content:'contenu2'}]}/>
                             <Quizz1 />
                             <Al2 />
                             <Quizz2 />
@@ -107,6 +99,14 @@ class ChoiceAL extends Component {
         return (
             <div>
                 <FullpageWrapper {...this.state}/>
+                <Sound
+                url="ambiance.mp3"
+                playStatus={Sound.status.PLAYING}
+                playFromPosition={300 /* in milliseconds */}
+                onLoading={this.handleSongLoading}
+                onPlaying={this.handleSongPlaying}
+                onFinishedPlaying={this.handleSongFinishedPlaying}
+                />
             </div>
         )
     }

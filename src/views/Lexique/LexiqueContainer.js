@@ -95,9 +95,7 @@ class LexiqueContainer extends Component {
             <div className="intro1 section text-center grain">
               <div className="blockText intro-anim">
                 <p>
-                  Vous avez la possibilité de re-découvrir les definitions de certains termes
-                  ou encore les anecedotes que vous avez rencontré au cours de cette experience
-                  par le biais d'une carte.
+                  Vous avez la possibilité de découvrir les definitions de certains termes ou encore les anecedotes que vous avez rencontré au cours de cette experience par le biais d'une carte.
                 </p>
                 <button 
                   className="button-discover"

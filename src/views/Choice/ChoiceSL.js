@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import { TimelineMax, Power3 } from 'gsap';
 import ReactFullpage from "@fullpage/react-fullpage";
+import Sound from 'react-sound';
+
 import Sl1 from '../SL/Sl1';
 import Sl2 from '../SL/Sl2';
 import Sl3 from '../SL/Sl3';
 import Sl4 from '../SL/Sl4';
 import Sl5 from '../SL/Sl5';
+
 
 class ChoiceSL extends Component {
     constructor(props){
@@ -53,6 +56,14 @@ class ChoiceSL extends Component {
         return (
             <div>
                 <FullpageWrapper {...this.state}/>
+                <Sound
+                url="ambiance.mp3"
+                playStatus={Sound.status.PLAYING}
+                playFromPosition={300 /* in milliseconds */}
+                onLoading={this.handleSongLoading}
+                onPlaying={this.handleSongPlaying}
+                onFinishedPlaying={this.handleSongFinishedPlaying}
+                />
             </div>
         )
     }
