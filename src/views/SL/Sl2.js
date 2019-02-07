@@ -19,8 +19,7 @@ class Sl2 extends Component {
                     <div className="row pt-xl pt-down-0">
                         <div className="col-md-5 zIndex-5">
                             <div className="blockText anim blockText-resp-middle h-50">
-                                Les loups sont des prédateurs de premier plan qui ont des effets bénéfiques de grande envergure sur des écosystèmes entiers - y compris la structure des rivières.
-                            </div>
+                            Avant le retour des loups, le nombre de cervidés n’ont fait qu’augmenter dans le parc, car ils n’avaient pas de prédateurs, et malgrés les efforts humains, ils avaient réduit la végétation à néant, ils l’avaient tout simplement broutée, mangée, dilapidée.                            </div>
                         </div>
                     </div>
                 </div>
@@ -28,8 +27,7 @@ class Sl2 extends Component {
                     <div className="row jc-end mt-md mt-down-0">
                         <div className="col-md-5 zIndex-5">
                             <div className="blockText anim blockText-resp-middle h-50">
-                                Dès que les loups ont été réintroduits dans le parc, même en petit nombre, l’impact fut spectaculaire. Les influences bénéfiques des loups réintroduits sont devenues presque immédiatement apparentes.
-                            </div>
+                            Le surnombre de wapitis ont détruit les vastes zones de végétation, les arbres et arbustes ont cessés de pousser. Les petits animaux comme les souris, les lapins et les belettes ont déserté le parc, Yellowstone est désormais vide de faune                            </div>
                         </div>
                     </div>
                 </div>
