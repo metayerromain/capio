@@ -22,7 +22,7 @@ class Al9 extends Component {
     }
 
     render () {
-        const { contents, images } = this.state;
+        const { contents } = this.state;
 
         return (
 
@@ -38,7 +38,7 @@ class Al9 extends Component {
                     <div className="row jc-end">
                         <div className="col-md-6">
                             <div className="blockText animText blockText-down-center">
-                                Nous savons tous que les loups tuent différentes espèces d’animaux mais nous sommes moins au courant qu’ils ont donné la vie à beaucoup d’autres !
+                                {contents[8] && contents[8].description}                
                             </div>
                         </div>
                     </div>

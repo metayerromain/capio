@@ -24,13 +24,16 @@ class Al14 extends Component {
     }
 
     render () {
-            return(
+
+        const { contents } = this.state;
+
+        return (
             <div id="Al14" className="section grain">
                 <div className="container">
                     <div className="row pt-xl pt-down-0">
                         <div className="col-md-12 zIndex-5">
                             <div className="blockText anim blockText-resp-middle h-50">
-                                Les loups sont des prédateurs de premier plan qui ont des effets bénéfiques de grande envergure sur des écosystèmes entiers - y compris la structure des rivières.
+                                {contents[13] && contents[13].title}        
                             </div>
                         </div>
                     </div>
@@ -39,7 +42,7 @@ class Al14 extends Component {
                     <div className="row jc-end mt-md mt-down-0">
                         <div className="col-md-5 zIndex-5">
                             <div className="blockText anim blockText-resp-middle h-50">
-                                Dès que les loups ont été réintroduits dans le parc, même en petit nombre, l’impact fut spectaculaire. Les influences bénéfiques des loups réintroduits sont devenues presque immédiatement apparentes.
+                                {contents[13] && contents[13].description}        
                             </div>
                         </div>
                     </div>
