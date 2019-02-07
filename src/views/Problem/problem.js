@@ -4,7 +4,8 @@ import Choice from '../Choice/ChoiceContainer';
 import Scroll from '../../assets/Picto/noun_scrolling_2058570.svg';
 import '../../assets/style/ProblemIntro.scss';
 import ReactFullpage from "@fullpage/react-fullpage";
-import { TweenLite, TimelineMax, Linear, Back, Sine, Power3 } from 'gsap';
+import { TweenLite, TimelineMax, Power3 } from 'gsap';
+import SplitText from '../../assets/lib/SplitText'
 
 
 class Problem extends Component {
@@ -21,9 +22,23 @@ class Problem extends Component {
                     
                     if(state.initialized){
                         var elementToAnim = document.querySelectorAll('.intro-anim');
-                        var advanced = document.querySelector('.advanced');
+                        var advanced = document.querySelector('.advanced'); 
+                        var introText = document.querySelectorAll('.animTextProblem');
+                        if(state.destination.index === 0){
+                            var tlSplit = new TimelineMax({paused:true}), 
+                            mySplitText = new SplitText(introText, {type:"lines"}), 
+                            lines = mySplitText.lines; 
+                            tlSplit.staggerFromTo(introText, 0, {autoAlpha: 0}, {autoAlpha: 1}, "+=4");
+                            tlSplit.staggerFromTo(lines, 0.4, {opacity:0, y:80}, {opacity:1, y:0}, 0.1, 'start');
+                            tlSplit.play();
+                        }
                         if(state.callback === "onLeave"){
+                            // tlSplit.reverse();
                             if(state.destination.index === 1){
+                                introText.forEach((element, i)=>{
+                                    console.log('opacity', element)
+                                    element.style.opacity="0";
+                                });
                                 elementToAnim.forEach((element, i) => {
                                     var tl = new TimelineMax({delay:i*7});
                                     tl.fromTo(advanced, 6.6, {scaleX: 0}, {scaleX: 1, transformOrigin:"left", ease: Power3.easeInOut}, 'start')
@@ -43,7 +58,7 @@ class Problem extends Component {
                         <section id="problemIntro">
                             <section id="fullpage-wrapper">
                                 <div className="problem section">
-                                    <h3>Comment la réintroduction<br />
+                                    <h3 className="animTextProblem">Comment la réintroduction<br />
                                     d’un animal peut-il littéralement <br />
                                     transformer un écosystème ?</h3>
 
@@ -51,7 +66,9 @@ class Problem extends Component {
                                     L’expérience se fait au scroll vertical
                                     </p>
 
-                                    <img src={Scroll} alt="scroll"></img>
+                                    <div class="mouse">
+                                        <div class="scroll"></div>
+                                    </div>
                                 </div>
                                 <Intro />
                                 <Choice />
