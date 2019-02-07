@@ -35,8 +35,9 @@ class ChoiceAL extends Component {
                         timeline.staggerFromTo(elementToAnim, .5, { autoAlpha: 0, y: 40}, {autoAlpha: 1, y: 0, ease: Power3.easeInOut}, .15, "start");
 
                         timeline.play();
-
-                        if(state.callback === "onLeave"){
+                        
+                        console.log(state)
+                        if(state.callback === "afterLoad"){
                             timeline.reverse();
                         }
                     }
