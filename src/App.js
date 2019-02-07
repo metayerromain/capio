@@ -2,8 +2,11 @@ import React, { Component, Fragment  } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import HomePage from './views/homePage';
 import AlPage from './views/alPage';
+import AlSlPage from './views/alSlpage';
 import SlPage from './views/slPage';
+import SlAlPage from './views/slAlPage';
 import LexiquePage from './views/lexiquePage';
+import Conclusion from './views/Conclusion/ConclusionContainer';
 
 //import dependencies
 import 'flexboxgrid'
@@ -66,7 +69,10 @@ class App extends Component {
           <Fragment>
             <Route exact path="/" component={HomePage} />
             <Route path="/choiceAl" component={AlPage} />
+            <Route path="/choiceAlSl" component={AlSlPage} />
             <Route path="/choiceSl" component={SlPage} />
+            <Route path="/choiceSlAl" component={SlAlPage} />
+            <Route path="/conclusion" component={Conclusion} />
             <Route path="/index" component={LexiquePage} />
           </Fragment>
         </Router>
