@@ -15,6 +15,7 @@ import Al11 from '../AL/Al11';
 import Al12 from '../AL/Al12';
 import Al13 from '../AL/Al13';
 import Al14 from '../AL/Al14';
+import Quizz2 from '../AL/Quizz2';
 
 class ChoiceAL extends Component {
 
@@ -45,6 +46,7 @@ class ChoiceAL extends Component {
                         <section id="fullpage-wrapper">
                             <Al1 lexique={[{title:'titre1', content:'contenu1'}, {title:'titre2', content:'contenu2'}]}/>
                             <Al2 />
+                            <Quizz2 />
                             <Al3 />
                             <Al4 />
                             <Al5 />
