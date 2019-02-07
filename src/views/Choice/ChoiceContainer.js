@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import '../../assets/style/Choice.scss';
 
 class Choice extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
+  constructor(props) {
+    super(props)
+    this.state = {
 
-        }
     }
+  }
 
     render() {
         return(
