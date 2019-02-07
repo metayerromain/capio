@@ -80,10 +80,9 @@ class Al1 extends Component {
                 <div className="container-fluid mt-md">
                     <div className="jc-around">
                     <Swiper {...params}>
-                        <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + "castor1.jpg" + ')'}}></div>
-                        <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + require("../../assets/img/1 AL/fond1.jpg") + ')'}}></div>
-                        <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + require("../../assets/img/1 AL/fond1.jpg") + ')'}}></div>
-                        <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + require("../../assets/img/1 AL/fond1.jpg") + ')'}}></div>
+                        <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + require("../../assets/img/1 AL/castor1.jpg") + ')'}}></div>
+                        <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + require("../../assets/img/1 AL/corbeau1.jpg") + ')'}}></div>
+                        <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + require("../../assets/img/1 AL/ours1.jpg") + ')'}}></div>
                     </Swiper>
 
                     </div>

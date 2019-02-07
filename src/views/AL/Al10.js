@@ -6,11 +6,28 @@ import Swiper from 'react-id-swiper';
 class Al10 extends Component {
     constructor(props) {
         super(props)
+        this.el = document.querySelector('.modal');
 
         this.state = {
         }
     }
+    displayModal = ( event )=>
+    {   
+        var indexEl = event.target.getAttribute('data-id');
+        var el = this.el;
+        el.style.top = event.pageY +"px";
+        el.style.left = event.pageX  +"px";
+        el.style.visibility = "visible";
+        el.innerHTML = "<div class='modal-title'>"+this.props.lexique[indexEl].title +"</div>" + "<div class='modal-content'>"+this.props.lexique[indexEl].content+"</div>";
+    }
 
+    hideModal = ( event ) =>
+    {
+        this.el.style.visibility = "hidden";
+        this.setState = {
+            contents: []
+        }
+    }
     render () {
 
         const params = {
@@ -46,10 +63,9 @@ class Al10 extends Component {
                 <div className="container-fluid mt-md">
                     <div className="jc-around">
                     <Swiper {...params}>
-                        <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + require("../../assets/img/1 AL/fond1.jpg") + ')'}}></div>
-                        <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + require("../../assets/img/1 AL/fond1.jpg") + ')'}}></div>
-                        <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + require("../../assets/img/1 AL/fond1.jpg") + ')'}}></div>
-                        <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + require("../../assets/img/1 AL/fond1.jpg") + ')'}}></div>
+                        <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + require("../../assets/img/10 AL/aigle1.jpg") + ')'}}></div>
+                        <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + require("../../assets/img/10 AL/lynx1.jpg") + ')'}}></div>
+                        <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + require("../../assets/img/10 AL/scarabe1.jpg") + ')'}}></div>
                     </Swiper>
 
                     </div>
