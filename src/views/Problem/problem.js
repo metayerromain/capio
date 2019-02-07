@@ -10,8 +10,6 @@ import SplitText from '../../assets/lib/SplitText'
 
 class Problem extends Component {
 
-
-
     render(){
         const FullpageWrapper = fullpageProps => (
         <ReactFullpage
@@ -33,11 +31,8 @@ class Problem extends Component {
                             tlSplit.play();
                         }
                         if(state.callback === "onLeave"){
-                            console.log(state)
-                            // tlSplit.reverse();
                             if(state.destination.index === 1){
                                 introText.forEach((element, i)=>{
-                                    console.log('opacity', element)
                                     element.style.opacity="0";
                                 });
                                 elementToAnim.forEach((element, i) => {
@@ -48,13 +43,9 @@ class Problem extends Component {
                                     tl.eventCallback("onComplete", function(i){
                                         if(i === elementToAnim.length - 1){
                                             fullpageApi.moveSectionDown()
-                                            // tl.reverse().timeScale(5);
                                         }
                                     },[i]);
                                 });
-                            }
-                            if(state.destination.index === 2){
-                                console.log('caca')
                             }
                         }
                     }
