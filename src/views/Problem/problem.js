@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Intro from './intro';
 import Choice from '../Choice/ChoiceContainer';
-import Scroll from '../../assets/Picto/noun_scrolling_2058570.svg';
 import '../../assets/style/ProblemIntro.scss';
 import ReactFullpage from "@fullpage/react-fullpage";
 import { TweenLite, TimelineMax, Power3 } from 'gsap';
