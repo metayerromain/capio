@@ -3,7 +3,7 @@ import '../../assets/style/Al.scss';
 import QuizzContainer from '../Quizz/QuizzContainer';
 
 
-class Quizz2 extends Component {
+class Quizz8 extends Component {
     constructor(props) {
         super(props)
 
@@ -13,13 +13,13 @@ class Quizz2 extends Component {
     render () {
         return (
             <Fragment>
-                <div id="Quizz2" className="section grain">
+                <div id="Quizz8" className="section grain">
                     <div className="container">
                         <div className="row pt-down-0">
-                            <QuizzContainer  question={'À ton avis, que chassent les loups ?'}
-                            goodAnswer={'wapitis'}
-                            badAnswer={['ours','canards']}
-                            image={'/images/loup_small_thumbnail.svg'} /> 
+                            <QuizzContainer  question={'Qui mange les rongeurs ?'}
+                            goodAnswer={'Le scarabé'}
+                            badAnswer={['Le loup','Les ours']}
+                            image={'/images/rongeur_small_thumbnail.svg'} /> 
                         </div>
                     </div>
                 </div>
@@ -28,4 +28,4 @@ class Quizz2 extends Component {
     }
 }
 
-export default Quizz2;
+export default Quizz8;

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { TimelineMax, Power3 } from 'gsap';
 import ReactFullpage from "@fullpage/react-fullpage";
+
 import Al1 from '../AL/Al1';
 import Al2 from '../AL/Al2';
 import Al3 from '../AL/Al3';
@@ -15,7 +16,19 @@ import Al11 from '../AL/Al11';
 import Al12 from '../AL/Al12';
 import Al13 from '../AL/Al13';
 import Al14 from '../AL/Al14';
+import Quizz1 from '../AL/Quizz1';
 import Quizz2 from '../AL/Quizz2';
+import Quizz3 from '../AL/Quizz3';
+import Quizz4 from '../AL/Quizz4';
+import Quizz5 from '../AL/Quizz5';
+import Quizz6 from '../AL/Quizz6';
+import Quizz7 from '../AL/Quizz7';
+import Quizz8 from '../AL/Quizz8';
+import Quizz9 from '../AL/Quizz9';
+import Quizz10 from '../AL/Quizz10';
+import Quizz11 from '../AL/Quizz11';
+import Quizz12 from '../AL/Quizz12';
+import Quizz13 from '../AL/Quizz13';
 
 class ChoiceAL extends Component {
 
@@ -45,19 +58,31 @@ class ChoiceAL extends Component {
                     return(
                         <section id="fullpage-wrapper">
                             <Al1 lexique={[{title:'titre1', content:'contenu1'}, {title:'titre2', content:'contenu2'}]}/>
+                            <Quizz1 />
                             <Al2 />
                             <Quizz2 />
                             <Al3 />
+                            <Quizz3 />
                             <Al4 />
                             <Al5 />
+                            <Quizz4 />
+                            <Quizz5 />
                             <Al6 />
+                            <Quizz6 />
                             <Al7 />
+                            <Quizz7 />
                             <Al8 />
                             <Al9 />
                             <Al10 />
+                            <Quizz8 />
+                            <Quizz9 />
                             <Al11 />
+                            <Quizz10 />
+                            <Quizz11 />
                             <Al12 />
                             <Al13 />
+                            <Quizz12 />
+                            <Quizz13 />
                             <Al14 />
                         </section>
                     )

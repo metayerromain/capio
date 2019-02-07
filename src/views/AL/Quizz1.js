@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import '../../assets/style/Al.scss';
-import QuizzContainer from '../Quizz/QuizzContainer';
+import Quizz from '../Quizz/QuizzContainer';
 
 
-class Quizz2 extends Component {
+class Quizz1 extends Component {
     constructor(props) {
         super(props)
 
@@ -13,12 +13,12 @@ class Quizz2 extends Component {
     render () {
         return (
             <Fragment>
-                <div id="Quizz2" className="section grain">
+                <div id="Quizz1" className="section grain">
                     <div className="container">
                         <div className="row pt-down-0">
-                            <QuizzContainer  question={'À ton avis, que chassent les loups ?'}
-                            goodAnswer={'wapitis'}
-                            badAnswer={['ours','canards']}
+                            <Quizz  question={'Pensez-vous que les loups ont un quelconque impact sur le comportement des eaux ?'}
+                            goodAnswer={'oui'}
+                            badAnswer={['non', 'peut être']}
                             image={'/images/loup_small_thumbnail.svg'} /> 
                         </div>
                     </div>
@@ -28,4 +28,4 @@ class Quizz2 extends Component {
     }
 }
 
-export default Quizz2;
+export default Quizz1;
