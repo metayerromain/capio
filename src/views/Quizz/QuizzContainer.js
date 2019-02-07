@@ -82,6 +82,9 @@ class QuizzContainer extends Component {
         return(
             <div className="quizzContainer">
                 <p className="quizzQuestion">{this.props.question}</p>
+                {/* this.props.badAnswer.forEach(element => { */}
+
+                {/* // }); */}
                 <input onClick={this.checkAnswer} className="quizzAnswer" type="submit" value={this.props.badAnswer[0]} ref={this.inputRef} autoFocus/>
                 <input onClick={this.checkAnswer} className="quizzAnswer" type="submit" value={this.props.badAnswer[1]} ref={this.inputRef} autoFocus />
                 <input onClick={this.checkAnswer} className="quizzAnswer" type="submit" value={this.props.goodAnswer} ref={this.inputRef} autoFocus/>
