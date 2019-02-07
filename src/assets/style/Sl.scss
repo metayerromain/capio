@@ -99,18 +99,18 @@
     display: block;
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-    url('../img/1\ AL/fond1.jpg') no-repeat center;
+    url('../img/SL/sl1_bg.jpg') no-repeat center;
     background-size: cover;
 }
 #Sl2 {
     display: block;
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-    url('../img/2\ AL/fond2.jpg') no-repeat center;
+    url('../img/SL/sl1_bg.jpg') no-repeat center;
     background-size: cover;
     position: relative;
     .img1 {
-        background: url('../img/2\ AL/cascade1.jpg') no-repeat center;
+        background: url('../img/SL/sl2_first.jpg') no-repeat center;
         background-size: cover;
         width: 570px;
         height: 810px;
@@ -119,7 +119,7 @@
         bottom: 0;
     }
     .img2 {
-        background: url('../img/2\ AL/paysage1.jpg') no-repeat center;
+        background: url('../img/SL/sl2_second.jpg') no-repeat center;
         background-size: cover;
         width: 728px;
         height: 428px;
