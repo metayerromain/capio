@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import LexiqueModal from './LexiqueModal'
 import '../../assets/style/Lexique.scss';
+import { TweenLite, TimelineMax, Linear, Back, Sine, Power3 } from 'gsap';
 
 class LexiqueContainer extends Component {
 
