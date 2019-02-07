@@ -18,7 +18,16 @@
     transform: translateY(-50%);
     font-weight: bold;
 }
-
+.advanced{
+    height: 1px;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    width: 30%;
+    background: #000;
+    margin: 50px auto;
+}
 .modal{
     visibility: hidden;
     position: absolute;

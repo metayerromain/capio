@@ -17,16 +17,23 @@ class Problem extends Component {
             {...fullpageProps}
             callbacks= {["afterLoad", "onLeave"]}
             parallax={true}
-                render={({ state, props }) => {
+                render={({ state, fullpageApi }) => {
                     
                     if(state.initialized){
                         var elementToAnim = document.querySelectorAll('.intro-anim');
+                        var advanced = document.querySelector('.advanced');
                         if(state.callback === "onLeave"){
                             if(state.destination.index === 1){
                                 elementToAnim.forEach((element, i) => {
                                     var tl = new TimelineMax({delay:i*7});
-                                    tl.to(element, 1, {autoAlpha:1})
+                                    tl.fromTo(advanced, 6.6, {scaleX: 0}, {scaleX: 1, transformOrigin:"left", ease: Power3.easeInOut}, 'start')
+                                    tl.to(element, 1, {autoAlpha:1, ease: Power3.easeInOut}, 'start')
                                     tl.to(element, .5, {autoAlpha:0}, '6.6')
+                                    tl.eventCallback("onComplete", function(i, element){
+                                        if(i === elementToAnim.length - 1){
+                                            fullpageApi.moveSectionDown()
+                                        }
+                                    },[i, element]);
                                 });
                             }
                         }
