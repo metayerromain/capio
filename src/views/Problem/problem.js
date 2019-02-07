@@ -33,7 +33,7 @@ class Problem extends Component {
                             tlSplit.play();
                         }
                         if(state.callback === "onLeave"){
-                            tlSplit.reverse();
+                            // tlSplit.reverse();
                             if(state.destination.index === 1){
                                 introText.forEach((element, i)=>{
                                     console.log('opacity', element)
