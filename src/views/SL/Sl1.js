@@ -24,41 +24,12 @@ class Sl1 extends Component {
     hideModal = ( event ) =>
     {
         this.el.style.visibility = "hidden";
-        this.setState = {
-            contents: [],
-            images: []
-        }
-    }
-    componentDidMount() {
-        fetch('http://localhost:8888/capio/api/content/read.php')
-        .then(response => response.json())
-        .then(data => this.setState({ contents: data.contents }));
 
-        fetch('http://localhost:8888/capio/api/images/read.php')
-        .then(response => response.json())
-        .then(data => this.setState({ images: data.images }));
-  
     }
+
 
     render () {
-        // console.log('before render', contents);
-        // const { contents, images } = this.state;
-        // console.log('after state', contents);
 
-
-        // return (
-            
-        //     <div id="Al1" className="section">
-        //     {contents.map((content) =>
-        //         <div key={content.id} className="blockText">
-        //             <p>{content.description}</p>
-        //         </div>
-        //     )}
-        //     {images.map((image) =>
-        //         <div key={image.id} className="img1"><img src={image.img}></img></div>
-        //         )}
-        //         <div className="img2"></div>
-        //         <div className="img3"></div>
               
         const params = {
             slidesPerView: 3,
@@ -93,10 +64,9 @@ class Sl1 extends Component {
                 <div className="container-fluid mt-md">
                     <div className="jc-around">
                     <Swiper {...params}>
-                        <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + "castor1.jpg" + ')'}}></div>
-                        <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + require("../../assets/img/1 AL/fond1.jpg") + ')'}}></div>
-                        <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + require("../../assets/img/1 AL/fond1.jpg") + ')'}}></div>
-                        <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + require("../../assets/img/1 AL/fond1.jpg") + ')'}}></div>
+                        <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + require("../../assets/img/SL/sl1_first.png") + ')'}}></div>
+                        <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + require("../../assets/img/SL/sl1_second.png") + ')'}}></div>
+                        <div className="mt-sm img-h-1 col-12 img anim" style={{backgroundImage: 'url(' + require("../../assets/img/SL/sl1_third.jpg") + ')'}}></div>
                     </Swiper>
 
                     </div>
