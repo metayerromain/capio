@@ -14,10 +14,10 @@ class Choice extends Component {
         return(
             <section id="choices" className="section">
                 <Link to={`/choiceAl`} className="buttonAl">
-                    <p>Yellowtone <br /> avec les loups</p>
+                    <p>Yellowstone <br /> avec les loups</p>
                 </Link>
                 <Link to={`/choiceSl`} className="buttonSl">
-                    <p>Yellowtone <br /> sans les loups</p>
+                    <p>Yellowstone <br /> sans les loups</p>
                 </Link>
             </section>
         )

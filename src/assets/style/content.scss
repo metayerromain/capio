@@ -107,7 +107,7 @@
     background-color: white;
     padding: 30px;
     border: 2px solid #648244;
-    width: 50%;
+    width: 30%;
     .modal-title{
         font-weight: bold;
         color: #648244;
@@ -316,9 +316,9 @@ body{
 .middle-block{
     position: absolute;
     left: 0;
-    right: 0;
+    right:0;
     top: 50vh;
-    width: 50%;
+    width: 40%;
     margin-top: -50px;
     background-color: rgba(0, 0, 0, .3);
     @media (max-width: 991.98px) { 
