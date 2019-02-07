@@ -12,8 +12,7 @@ class Al1 extends Component {
         super(props)
         this.el = document.querySelector('.modal');
         this.state={
-            contents: [],
-            images: []
+            contents: []
         }
     }
 
@@ -31,8 +30,7 @@ class Al1 extends Component {
     {
         this.el.style.visibility = "hidden";
         this.setState = {
-            contents: [],
-            images: []
+            contents: []
         }
     }
     componentDidMount() {
@@ -40,32 +38,15 @@ class Al1 extends Component {
         .then(response => response.json())
         .then(data => this.setState({ contents: data.contents }));
 
-        fetch('http://localhost:8888/capio/api/images/read.php')
-        .then(response => response.json())
-        .then(data => this.setState({ images: data.images }));
+        // fetch('http://localhost:8888/capio/api/images/read.php')
+        // .then(response => response.json())
+        // .then(data => this.setState({ images: data.images }));
   
     }
 
     render () {
-        // console.log('before render', contents);
-        const { contents, images } = this.state;
-        // console.log('after state', contents);
-
-
-        // return (
-            
-        //     <div id="Al1" className="section">
-        //     {contents.map((content) =>
-        //         <div key={content.id} className="blockText">
-        //             <p>{content.description}</p>
-        //         </div>
-        //     )}
-        //     {images.map((image) =>
-        //         <div key={image.id} className="img1"><img src={image.img}></img></div>
-        //         )}
-        //         <div className="img2"></div>
-        //         <div className="img3"></div>
-              
+        const { contents } = this.state;
+   
         const params = {
             slidesPerView: 3,
             spaceBetween: 100,
@@ -90,8 +71,8 @@ class Al1 extends Component {
                 <div className="container pt-xl">
                     <div className="row">
                         <div className="col-12 col-md-8 container">
-                            <div className="blockText animText" key={contents.id}>
-                                {contents.description} <span data-id="0" className="lexique-word" onMouseEnter={ this.displayModal } onMouseLeave={ this.hideModal }>tous</span> que les loups tuent différentes espèces d’animaux mais nous <span data-id="1" className="lexique-word" onMouseEnter={ this.displayModal } onMouseLeave={ this.hideModal  }>sommes</span> moins au courant qu’ils ont donné la vie à beaucoup d’autres !
+                            <div className="blockText animText">
+                                {contents[0] && contents[0].description}
                             </div>
                         </div>
                     </div>

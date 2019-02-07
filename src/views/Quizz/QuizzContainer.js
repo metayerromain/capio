@@ -65,7 +65,7 @@ class QuizzContainer extends Component {
             <div className="quizzContainer">
                 <p className="quizzQuestion">{this.props.question}</p>
                 <p className="answerTitle">Bonne réponse !</p>
-                <p className="answerText">{this.props.goodAnswer} est bien la proie du loup.</p>
+                <p className="answerText">La réponse est bien {this.props.goodAnswer}</p>
                 <img src={this.props.image}></img>
             </div>
         )
@@ -74,7 +74,7 @@ class QuizzContainer extends Component {
             <div className="quizzContainer">
                 <p className="quizzQuestion">{this.props.question}</p>
                 <p className="badAnswerTitle">Mauvaise réponse...</p>
-                <p className="answerText">le loup chasse en particulier le {this.props.goodAnswer}</p>
+                <p className="answerText">La bonne réponse était {this.props.goodAnswer}</p>
                 <img src={this.props.image}></img>
             </div> 
         )

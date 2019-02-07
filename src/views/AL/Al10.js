@@ -8,20 +8,9 @@ class Al10 extends Component {
         super(props)
 
         this.state = {
-            contents: [],
-            images: []
         }
     }
-    componentDidMount() {
-        fetch('http://localhost:8888/capio/api/content/read.php')
-        .then(response => response.json())
-        .then(data => this.setState({ contents: data.contents }));
 
-        fetch('http://localhost:8888/capio/api/images/read.php')
-        .then(response => response.json())
-        .then(data => this.setState({ images: data.images }));
-  
-    }
     render () {
 
         const params = {
@@ -49,7 +38,7 @@ class Al10 extends Component {
                     <div className="row">
                         <div className="col-12 col-md-8 container">
                             <div className="blockText animText">
-                                Nous savons tous que les loups tuent différentes espèces d’animaux mais nous sommes moins au courant qu’ils ont donné la vie à beaucoup d’autres !
+                                Parce que les loups tuent les prédateurs des <span data-id="0" className="lexique-word" onMouseEnter={ this.displayModal } onMouseLeave={ this.hideModal }>lapins </span> et des <span data-id="0" className="lexique-word" onMouseEnter={ this.displayModal } onMouseLeave={ this.hideModal }>souris </span>, la population des rongeurs a augmenté. Un délice que n’a pas tardé à engloutir les <span data-id="0" className="lexique-word" onMouseEnter={ this.displayModal } onMouseLeave={ this.hideModal }>aigles </span>, les <span data-id="0" className="lexique-word" onMouseEnter={ this.displayModal } onMouseLeave={ this.hideModal }>corbeaux </span>, <span data-id="0" className="lexique-word" onMouseEnter={ this.displayModal } onMouseLeave={ this.hideModal }>lynx </span>, <span data-id="0" className="lexique-word" onMouseEnter={ this.displayModal } onMouseLeave={ this.hideModal }>belettes </span>, <span data-id="0" className="lexique-word" onMouseEnter={ this.displayModal } onMouseLeave={ this.hideModal }>scarabées </span>, et autres charognards.Les carcasses sont aussi bénéfiques pour les sols. Elles apportent des nutriments comme l’azote.                             
                             </div>
                         </div>
                     </div>

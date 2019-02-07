@@ -22,6 +22,7 @@ class Al6 extends Component {
     }
 
     render () {
+        const { contents, images } = this.state;
 
         return ( 
             <div id="Al6" className="section grain">
@@ -33,7 +34,7 @@ class Al6 extends Component {
                     </div>
                 </div>
                 <div className="blockText middle-block animText">
-                    Nous savons tous que les loups tuent différentes espèces d’animaux mais nous sommes moins au courant qu’ils ont donné la vie à beaucoup d’autres !
+                    {contents[5] && contents[5].description}                
                 </div>
             </div>
         )
