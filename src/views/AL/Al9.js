@@ -11,14 +11,13 @@ class Al9 extends Component {
         }
     }
     componentDidMount() {
-        fetch('http://localhost:8888/capio/api/content/read.php')
+        fetch('http://capio.local:8888/api/content/read.php')
         .then(response => response.json())
         .then(data => this.setState({ contents: data.contents }));
 
-        fetch('http://localhost:8888/capio/api/images/read.php')
+        fetch('http://capio.local:8888/api/images/read.php')
         .then(response => response.json())
         .then(data => this.setState({ images: data.images }));
-  
     }
 
     render () {
