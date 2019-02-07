@@ -33,6 +33,7 @@ class Problem extends Component {
                             tlSplit.play();
                         }
                         if(state.callback === "onLeave"){
+                            console.log(state)
                             // tlSplit.reverse();
                             if(state.destination.index === 1){
                                 introText.forEach((element, i)=>{
@@ -43,13 +44,17 @@ class Problem extends Component {
                                     var tl = new TimelineMax({delay:i*7});
                                     tl.fromTo(advanced, 6.6, {scaleX: 0}, {scaleX: 1, transformOrigin:"left", ease: Power3.easeInOut}, 'start')
                                     tl.to(element, 1, {autoAlpha:1, ease: Power3.easeInOut}, 'start')
-                                    tl.to(element, .5, {autoAlpha:0}, '6.6')
-                                    tl.eventCallback("onComplete", function(i, element){
+                                    tl.to(element, .5, {autoAlpha:0}, '6.6');
+                                    tl.eventCallback("onComplete", function(i){
                                         if(i === elementToAnim.length - 1){
                                             fullpageApi.moveSectionDown()
+                                            // tl.reverse().timeScale(5);
                                         }
-                                    },[i, element]);
+                                    },[i]);
                                 });
+                            }
+                            if(state.destination.index === 2){
+                                console.log('caca')
                             }
                         }
                     }

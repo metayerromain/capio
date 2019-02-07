@@ -14,16 +14,16 @@ class Intro1 extends Component {
             <div className="intro1 section">
                 <div className="advanced"></div>
                 <div className="intro-anim">
-                    Ce qui a donné aux biologistes une occasion unique d'étudier ce qui se passe lorsqu'un prédateur supérieur retourne à un écosystème.
+                1
                 </div>
                 <div className="intro-anim">
-                    Ce qui a donné aux biologistes une occasion unique d'étudier ce qui se passe lorsqu'un prédateur supérieur retourne à un écosystème.
+2
                 </div>
                 <div className="intro-anim">
-                    Ce qui a donné aux biologistes une occasion unique d'étudier ce qui se passe lorsqu'un prédateur supérieur retourne à un écosystème.
+3
                 </div>
                 <div className="intro-anim">
-                    Ce qui a donné aux biologistes une occasion unique d'étudier ce qui se passe lorsqu'un prédateur supérieur retourne à un écosystème.
+4
                 </div>
             </div>
         ) 
