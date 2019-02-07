@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { TimelineMax, Power3 } from 'gsap';
 
 class Intro1 extends Component {
     constructor(props) {
