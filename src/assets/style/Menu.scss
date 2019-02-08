@@ -71,11 +71,31 @@
         position: absolute;
         top: 0;
         right: 0;
-        margin: 20px;
+        margin: 10px;
         cursor: pointer;
-        img {
-            height: 30px;
-            width: 30px;
+        .menu1 {
+            display: block;
+            width: 20px;
+            height: 1px;
+            border: solid 1px #fff;
+            margin: 5px;
+            background-color: #fff;
+        }
+        .menu2 {
+            display: block;
+            width: 15px;
+            height: 1px;
+            border: solid 1px #fff;
+            margin: 5px;
+            background-color: #fff;
+        }
+        .menu3 {
+            display: block;
+            width: 5px;
+            height: 1px;
+            border: solid 1px #fff;
+            margin: 5px;
+            background-color: #fff;
         }
     }
 }

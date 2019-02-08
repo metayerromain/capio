@@ -49,7 +49,7 @@ class Al14 extends Component {
                 </div>
                 <div className="img1 img-h-2 zIndex-2 mt-down-md img anim d-down-none"></div>
                 <div className="img2 img-h-2 zIndex-3 mt-down-md img anim d-down-none"></div>
-                <Link to={`/conclusion`} className="Conclusion">
+                <Link to={`/conclusion`} className="Conclusion bond">
                     <p>Conclusion</p>
                     <img src={Skip} alt="Skip"></img>
                 </Link>

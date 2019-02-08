@@ -48,7 +48,9 @@ class MenuContainer extends Component {
                     </div>
                 </div>
                 <span onClick={() => this.openNav()} className="openbtn">
-                    <img src={MenuSvg} alt="Menu"></img>
+                    <div className="menu1"></div>
+                    <div className="menu2"></div>
+                    <div className="menu3"></div>
                 </span>
             </div>
         )

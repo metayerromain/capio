@@ -39,7 +39,7 @@ class Al12 extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="blockText middle-block animText">
+                <div className="blockText middle-block animText right-block">
                     La population des <span data-id="0" className="lexique-word" onMouseEnter={ this.displayModal } onMouseLeave={ this.hideModal }>ours </span> a commencé à augmenter en raison de l’augmentation des baies sur les nouveaux arbustes. Les ours ont accentué la pression des loups en tuant quelques faons.
                 </div>
             </div>
