@@ -26,7 +26,7 @@ class Sl5 extends Component {
                     </div>
                 </div>
                 <div className="img1 img-h-1 zIndex-2 mt-down-md img anim d-down-none"></div>
-                <Link to={`/choiceAl`} className="al">
+                <Link to={`/choiceAl`} className="al bond">
                     <p>Passez au chapitre 2</p>
                     <img src={Skip} alt="Skip"></img>
                 </Link>

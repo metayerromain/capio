@@ -22,7 +22,7 @@ class Sl3 extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="blockText middle-block animText">
+                <div className="blockText middle-block animText left-block">
                 Sans prédateur, ces herbivores se sont mis à se multiplier. Et par la même à endommager la végétation, mangée sans merci par les herbivores. Les conséquences ont rapidement été visibles : glissements de terrain, érosion du terrain pour ne citer que les principales.                </div>
             </div>
         )

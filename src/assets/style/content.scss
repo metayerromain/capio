@@ -201,6 +201,15 @@ body{
         margin: 20px;
     }
 }
+.bond{
+	animation: bounce 0.5s ease infinite alternate; 
+}
+@keyframes bounce { 
+    from {transform: translateY(0);
+    } 
+    to {transform: translateY(-20px);
+    }
+}
 .anim{
     opacity: 0;
 }
@@ -325,6 +334,26 @@ body{
     @media (max-width: 991.98px) { 
         width: 70%;
     }
+}
+
+.left-block {
+    font-size: 30px;
+    left: 2em;
+    top: 34vh;
+    width: 35%;
+    right: initial;
+    text-align: center;
+    line-height: 35px;
+}
+
+.right-block {
+    font-size: 30px;
+    right: 2em;
+    top: 34vh;
+    width: 35%;
+    left: initial;
+    text-align: center;
+    line-height: 35px;
 }
 
 .img{
