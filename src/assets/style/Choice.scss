@@ -1,0 +1,61 @@
+#choices {
+    display: flex;
+    flex-direction: row;
+    .fp-tableCell{
+        display: flex !important;
+    }
+    .buttonSl {
+        height: 100vh;
+        width: 50%;
+        cursor: pointer;
+        background: url("../img/Choix\ 1:2/désert1.jpg") no-repeat center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: .5s filter;
+        text-decoration: none;
+        &:hover {
+            filter: grayscale(70%);
+            p {
+                opacity: 1;
+            }
+        }
+        p {
+            font-family: SourceSansPro;
+            font-size: 50px;
+            font-weight: 600;
+            opacity: 0;
+            text-align: center;
+            color: #fff;
+            transition: 1s opacity;
+        }
+    }
+    .buttonAl {
+        height: 100vh;
+        width: 50%;
+        cursor: pointer;
+        background: url("../img/Choix\ 1:2/loup1.jpg") no-repeat center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: .5s filter;
+        text-decoration: none;
+        &:hover {
+            filter: grayscale(70%);
+            p {
+                opacity: 1;
+            }
+        }
+        p {
+            font-family: SourceSansPro;
+            font-size: 50px;
+            font-weight: 600;
+            opacity: 0;
+            text-align: center;
+            color: #fff;
+            transition: 1s opacity;
+        }
+    }
+}

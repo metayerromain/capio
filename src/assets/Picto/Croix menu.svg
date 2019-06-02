@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="38px" viewBox="0 0 45 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Croix menu</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Menu-burger-ouvert" transform="translate(-1341.000000, -35.000000)" fill-rule="nonzero" stroke="#F5FBEF" stroke-width="3">
+            <g id="Croix-menu" transform="translate(1343.000000, 37.000000)">
+                <path d="M-5.03879625,17.4330127 L46.4519829,17.4330127" id="Line-3" transform="translate(20.766660, 17.433013) rotate(40.000000) translate(-20.766660, -17.433013) "></path>
+                <path d="M-5.03879625,17.4330127 L46.4519829,17.4330127" id="Line-3" transform="translate(20.766660, 17.433013) scale(-1, 1) rotate(40.000000) translate(-20.766660, -17.433013) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
